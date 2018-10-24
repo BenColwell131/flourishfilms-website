@@ -1,0 +1,39 @@
+.trustedby {
+  padding: 3em 2em 9em;
+  text-align: center;
+}
+
+.trustedby-title{
+  font-size: 1.7rem;
+  margin-bottom: .5em;
+
+  @include mq{
+    font-size: 2.5rem;
+  }
+}
+
+.trustedby-subtitle{
+  padding: 0 2em;
+  margin-bottom: 2em;
+}
+
+.trustedby-logos{
+  @include container($max-width: 60em);
+
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include mq($width: 30em){
+    grid-gap: 3rem;
+  }
+  
+  @include mq {
+    grid-gap: 4rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.trustedby-logo{
+  margin: auto;
+}

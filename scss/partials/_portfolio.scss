@@ -1,0 +1,382 @@
+.portfolio{
+  padding: 4.5em 2em;
+  text-align: center;
+}
+
+.port-subtitle{
+  margin-bottom: 1.7em;
+
+  @include mq {
+    margin-bottom: 2.5em;
+  }
+}
+
+.port-items {
+  display: flex;
+  flex-wrap: wrap;
+  @include container($max-width: 60em);
+}
+
+.port-item{
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 20rem;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1em;
+    background: rgba($accent, .8);
+    color: $white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: top ease-in-out 250ms;
+  }
+
+  &:hover figcaption,
+  &:focus figcaption {
+    top: 0;
+  }
+}
+
+.port-item-title {
+  color: $white;
+  font-size: 1.25rem;
+  margin-bottom: auto;
+
+  @include mq($width: 30em){
+    font-size: 1.75rem;
+  }
+
+  @include mq($width: 40em){
+    font-size: 2.5rem;
+  }
+
+  @include mq{
+    font-size: 1.25rem;
+  }
+
+  @include mq($width: 60em){
+    font-size: 1.75rem;
+  }
+  @include mq($width: 80em){
+    font-size: 2.5rem;
+  }
+}
+
+.port-desc {
+  display: none;
+}
+
+.port-link {
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: $fw-b;
+  letter-spacing: .080em;
+  font-size: .9rem;
+  position: relative;
+  transition: opacity ease-in-out 250ms;
+
+  @include mq($width: 40em){
+    font-size: 1.25rem;
+  }
+
+  @include mq($width: 80em){
+    font-size: 1.5rem;
+  }
+
+  &::after{
+    content: url(../img/icons-other/more-info-arrow.svg);
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    top: -25%;
+  }
+
+  .featured & {
+    font-size: 1.2em;
+
+    @include mq($width: 40em){
+      font-size: 1.5rem;
+    }
+
+    @include mq($width: 80em){
+      font-size: 1.75rem;
+    }
+  }
+
+  &:hover{
+    opacity: .6;
+    color: white;
+  }
+}
+
+@supports (display: grid) {
+  .port-items {
+    display: grid;
+    grid-gap: .3125em;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mq {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .port-item.featured {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .featured {
+    .port-item-title {
+      font-size: 2.8rem;
+
+      @include mq($width: 30em){
+        font-size: 4rem;
+      }
+
+      @include mq($width: 80em){
+        font-size: 4.5rem;
+      }
+    }
+
+    .port-desc {
+      display: block;
+
+      @include mq($width: 40em){
+        font-size:1.25rem;
+      }
+
+      @include mq($width: 80em){
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+
+// Start of modal CSS
+
+.port-modal {
+  position: fixed;
+  background: $white;
+  z-index: 99;
+  top: 2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  box-shadow: 0 0 0 5em rgba(black, .7);
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  display: none;
+  &.active{
+    display: block;
+  }
+
+  @media (max-width: 22em){
+    left: 1em;
+    right: 1em;
+  }
+
+  @media (max-height: 40em){
+    top: 1em;
+    bottom: 1em;
+  }
+}
+
+.port-modal-close{
+  background: $dark-blue;
+  border: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 3em;
+  box-shadow: 0 0 10px rgba(white, .3);
+  cursor: pointer;
+  z-index: 99;
+
+  position: fixed;
+  left: 1em;
+  top: 1em;
+}
+
+.port-modal-header{
+  text-align: left;
+  padding: 6em 0 3em;
+  margin-bottom: 2em;
+  background-size: cover;
+  background-position: center;
+
+  @include mq {
+    padding: 6em 0;
+    margin-bottom: 3em;
+  }
+}
+
+.port-modal-title-box{
+  background: rgba($accent, .75);
+  padding: 3em 0 3em 2em;
+  width: 90%;
+  h1{
+    color: $white;
+    margin: 0;
+    display: inline-block;
+    font-size: 2.7rem;
+  }
+
+  @include mq{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3em 0;
+
+    h1{
+      font-size: 4rem;
+    }
+  }
+}
+
+.port-modal-content{
+  @include container($width: 85%);
+  text-align: left;
+  padding-bottom: 2em;
+
+  h2{
+    text-align: center;
+  }
+
+  h3{
+    font-family: $ff-ss-n;
+    font-size: 1.25rem;
+    color: $dark-blue;
+    font-weight: $fw-n;
+    margin: 2em 0 .75em;
+  }
+}
+
+.port-video-container{
+  width: 100%;
+  height: auto;
+  max-width: 50em;
+  margin: 0 auto 2.15em;
+
+  @include mq{
+    margin: 0 auto 3em;
+  }
+}
+
+.port-video{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.portrait{
+  height: auto;
+  min-height: 20em;
+}
+
+.port-video iframe{
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+}
+
+.port-testimonial-container{
+    background-color: $dark-blue;
+    padding: 3em 2em 7em 2em;
+    width: 100vw;
+    margin: 2em calc(50% - 50vw) 2em;
+
+    position: relative;
+    height: 90vh;
+
+    @include mq($width: 35em){
+      height: 60vh;
+    }
+
+    @media (max-width: 20em){
+      height: 100vh;
+    }
+
+    @media (max-height: 40em){
+      height: 100vh;
+    }
+}
+
+.port-testimonial{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 50em;
+    padding: 3em 0 1em 0;
+
+    h2{
+      text-align: left;
+    }
+
+    .author-details{
+      margin-left: 7.5em;
+
+      @include mq {
+        margin-left: 20em;
+      }
+
+      @media (max-height: 40em){
+        margin-left: 5em;
+      }
+    }
+}
+
+.port-modal .port-full-width{
+  max-width: initial;
+  width: 100vw;
+  margin: 2em calc(50% - 50vw);
+  height: 25vh;
+  object-fit: cover;
+}
+
+.port-modal .port-img-2 {
+  margin: 2em 0;
+}
+
+@include mq{
+  .port-modal .port-img-2 {
+    width: 60%;
+    float: left;
+    margin: .2em 2em 0 0;
+  }
+}
+
+@keyframes modalFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes modalFadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+// End of modal CSS

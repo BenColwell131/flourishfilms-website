@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="icons_light_close" data-name="icons/light/close" transform="translate(-120 -168)">
+    <rect id="bg" class="cls-1" width="24" height="24" transform="translate(120 168)"/>
+    <path id="union" class="cls-2" d="M1484.25,673.4v-6.5h-6.5a.75.75,0,0,1,0-1.5h6.5v-6.5a.75.75,0,1,1,1.5,0v6.5h6.5a.75.75,0,0,1,0,1.5h-6.5v6.5a.75.75,0,1,1-1.5,0Z" transform="translate(-447.014 -1341.093) rotate(45)"/>
+  </g>
+</svg>

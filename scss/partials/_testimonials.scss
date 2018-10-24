@@ -1,0 +1,126 @@
+.testimonials {
+  background: $dark-blue;
+  padding: 4.5em 2em;
+}
+
+.testimonial-quote {
+  color: $white;
+  font-size: 1.05rem;
+  font-style: italic;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 0.75em 0;
+  margin: 1em auto 2em;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 20%;
+    height: .5px;
+    background: $accent;
+    margin: 0 auto 1em;
+
+    @include mq {
+      margin: 0 auto 1.5em;
+    }
+
+    @media (max-height: 40em){
+      display: none;
+    }
+  }
+
+  @include mq {
+    font-size: 1.25rem;
+  }
+}
+
+.author-details {
+    margin-left: 10em;
+    margin-bottom: 2.5em;
+
+    @include mq {
+      margin-left: 20em;
+    }
+
+    @media (max-height: 40em){
+      margin-left: 5em;
+    }
+}
+
+.testimonial-title {
+  font-size: 1.175rem;
+  font-family: $ff-ss-n;
+  font-weight: $fw-b;
+  letter-spacing: .25em;
+  margin-bottom: .25em;
+
+
+  @include mq {
+    font-size: 1.5rem;
+  }
+}
+
+.testimonial-subtitle{
+  color: $white;
+  font-size: .8125rem;
+  letter-spacing: .1em;
+  line-height: 1.5;
+
+  @include mq {
+    font-size: 1.125rem;
+  }
+}
+
+.testimonial-carousel-container{
+  .carousel-inner{
+    width: 95%;
+    max-width: 50em;
+    margin: 0 auto;
+  }
+
+  .carousel-item{
+    height: 80vh;
+
+    .testimonial{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include mq($width: 35em){
+      height: 50vh;
+    }
+
+    @media (max-width: 20em){
+      height: 100vh;
+    }
+
+    @media (max-height: 40em){
+      height: 100vh;
+    }
+  }
+
+  .carousel-indicators{
+    position: relative;
+    margin: 1em auto 0;
+
+    li {
+      height: .75em;
+      width: .75em;
+      border-radius: 30%;
+      background-color: rgba($accent, .2);
+    }
+
+    .active{
+      background-color: rgba($accent, 1);
+    }
+  }
+}

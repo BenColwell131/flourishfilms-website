@@ -1,0 +1,30 @@
+﻿<!-- Overall todo list -->
+<!-- TODO: Test Form action -->
+<!-- TODO: Media queries for very small screens (< iPhone 5) -->
+<!-- TODO: Clean up CSS/HTML -->
+<!-- TODO: Image folder sorting -->
+<!-- TODO: Replace testimonials -->
+<!-- TODO: Update menu image -->
+<!-- TODO: Testimonial heights  -->
+<!-- TODO: Portrait video albums  -->
+<!-- TODO: Google analytics -->
+<!-- TODO: Expand background video -->
+<!-- TODO: prevent body scrolling when modal open -->
+<!-- TODO: Reconfigure modal close button on mobile/tablet -->
+<!-- TODO: Thank you .html -->
+
+<!-- TODO: Update videos on:
+                Eddie rockets
+                Half hour hero
+                A1 coaching
+                RTÉ lifehacks
+                Directors in Dialogue
+              -->
+
+<!-- TODO: Source testimonials for:
+                Offbeat
+                Camile
+                Provident
+                BodyMed
+                Penguin
+              -->

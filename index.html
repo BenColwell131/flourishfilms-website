@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+    <!-- Bootstrap import -->
+    <!-- TODO: Not sure I need to import the whole bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Custom CSS import -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+
+</head>
+
+<!-- === BODY START === -->
+<body>
+
+<!-- === PRELOADER START === --->
+<div class="preloader-container">
+  <img class="preloader-icon" src="img/loading-icon-2.svg" alt="Loading icon">
+  <div class="preloader-title">fluffing the pillows...</div>
+</div>
+<!-- === PRELOADER END === --->
+
+<!-- === NAV START === -->
+<button class="nav-open-button">
+    <img class="nav-open-icon" src="img/menu-icons/hamburger-icon-orange.svg" onerror="this.src='img/menu-icons/hamburger-icon-orange.png'" alt="hamburger menu">
+</button>
+
+<nav>
+  <button class="nav-close-button">
+    <img class="nav-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+  </button>
+  <div class="nav-img-container"></div>
+  <ul>
+    <li>
+      <a class="nav-link scroll" href="#welcome">
+        <img class="nav-icon" src="img/menu-icons/home-icon.svg" alt="Menu Icon" onerror="this.src='img/menu-icons/home-icon.png'">
+        Home
+      </a>
+    </li>
+    <li>
+      <a class="nav-link scroll" href="#about-us">
+        <img class="nav-icon" src="img/menu-icons/about-us-icon.svg" alt="About Us Icon" onerror="this.src='img/menu-icons/about-us-icon.png'">
+        About Us
+      </a>
+    </li>
+    <li>
+      <a class="nav-link scroll" href="#portfolio">
+        <img class="nav-icon" src="img/menu-icons/portfolio-icon.svg" alt="Portfolio Icon" onerror="this.src='img/menu-icons/portfolio-icon.png'">
+        Portfolio
+      </a>
+    </li>
+    <li>
+      <a class="nav-link scroll" href="#contact-us">
+        <img class="nav-icon" src="img/menu-icons/contact-us-icon.svg" alt="Contact Us Icon" onerror="this.src='img/menu-icons/contact-us-icon.png'">
+        Contact Us
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- === NAV END === -->
+
+
+
+    <!-- Welcome Section -->
+    <section class="welcome" id="welcome">
+      <video playsinline autoplay loop muted poster="img/welcome-background-poster-v2.jpg">
+        <source src="img/welcome-background-video-01-v4.webm" type="video/webm">
+        <source src="img/welcome-background-video-01-v2.mp4" type="video/mp4">
+      </video>
+      <div class="welcome-message bounce-up">
+        <h2>Welcome to</h2>
+        <h1>Flourish</h1>
+      </div>
+      <img class="welcome-arrow-icon" src="img/icons-other/arrow-orange-down.svg" onerror="this.src='arrow-orange-down.png'" alt="down arrow">
+
+    </section>
+
+
+    <!-- Testimonial section -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonial-carousel-container">
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+            <!-- Testimonial 1: Eddie Rockets -->
+            <div class="carousel-item active">
+              <div class="testimonial">
+                <p class="testimonial-quote">The creative delivered by Flourish Films was used on Eddie Rocket’s first ever Snapchat Ads campaign and it was a spectacular success. In the first month of the campaign, visits to the Eddie Rocket’s website were a multiple of what we had received in total for the previous 12 months and this drove an <span style="color: #FF6928;">increase in online delivery orders of around 14%</span> for the duration of the campaign. In addition, Flourish Films made the food look really appetising and there also was a less measurable value of brand consideration which no doubt drove footfall to our diners.</p>
+                <div class="author-details">
+                  <h1 class="testimonial-title">Aidan Elder</h1>
+                  <h2 class="testimonial-subtitle">
+                      Marketing Manager<br>
+                      Eddie Rockets
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2: RTÉ/SDGI -->
+            <div class="carousel-item">
+              <div class="testimonial">
+                <p class="testimonial-quote">We worked with Ben and the team on a series of interviews with Irish filmmakers, created in association with Screen Directors Guild Ireland - they <span style="color: #FF6928;">delivered above and beyond</span> on every capacity, from shoot to delivery, and did great work. We're looking forward to working with them again.</p>
+                <div class="author-details">
+                  <h1 class="testimonial-title">Derek O'Connor</h1>
+                  <h2 class="testimonial-subtitle">
+                      Editor<br>
+                      RTÉ
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3: REDC/Allianz -->
+            <div class="carousel-item">
+              <div class="testimonial">
+                <p class="testimonial-quote">I'd delighted with the work Flourish Films did for us. The team were extremely professional and competent and put everyone at ease in front of the camera. The quality of the video they produced for us at the end was excellent - it showed a really good understanding of the brief and had <span style="color: #FF6928;">just the right mix of factual content with a bit of creative flair</span> to make it more interesting and engaging.</p>
+                <div class="author-details">
+                  <h1 class="testimonial-title">Carol Fanagan</h1>
+                  <h2 class="testimonial-subtitle">Deputy Managing Director<br>
+                      REDC</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4: A1 Coaching -->
+            <div class="carousel-item">
+              <div class="testimonial">
+                <p class="testimonial-quote">Flourish Films came highly recommended from a friend who had worked with them in the past. I've been using their services on an on going basis for over 5 months and on every occasion they have <span style="color: #FF6928;">surpassed my expectations</span>. The quality of their final product coupled with their professional approach make them a joy to work with. I'd highly recommend Flourish Films to anyone in the market for top quality video.</p>
+                <div class="author-details">
+                  <h1 class="testimonial-title">Anthony Walsh</h1>
+                  <h2 class="testimonial-subtitle">Director<br>
+                      A1 Coaching</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 5: REDC/BordBia -->
+            <div class="carousel-item">
+              <div class="testimonial">
+                <p class="testimonial-quote">We needed Flourish to be <span style="color: #FF6928;">creative, resourceful, professional and “on-brief”</span>. They didn’t disappoint. We look forward to working with Flourish again in the development of impactful, compelling and commercially orientated film</p>
+                <div class="author-details">
+                  <h1 class="testimonial-title">David Cullen</h1>
+                  <h2 class="testimonial-subtitle">Strategy and Insight Specialist<br>
+                      BordBia</h2>
+                </div>
+              </div>
+            </div>
+            <!-- Add new testimonials here. -->
+
+          </div>
+
+          <div class="carousel-controls">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+              <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+              <li data-target="#testimonialCarousel" data-slide-to="3"></li>
+              <li data-target="#testimonialCarousel" data-slide-to="4"></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+
+    <!-- About section -->
+    <section class="about" id="about-us">
+      <h1 class="about-title animated bounce-up">What we do</h1>
+      <h2 class="about-subtitle">Welcome to Flourish Films and welcome to the video marketing experience</h2>
+      <!-- Showreel video here -->
+      <div class="showreel-container">
+        <div class="about-showreel">
+          <iframe src="https://player.vimeo.com/video/275648683" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p>Flourish is a creative marketing consultancy that partners with leading Irish brands to develop video marketing strategies that enhance brand image and foster consumer engagement. We strive to respond to and evolve alongside our clients; we promise to adapt, create, explore and deliver, wholeheartedly and passionately. </p>
+        <p>Our aim is to engage, innovate and above all, to provide the brands we work with the resources and ideas necessary to be memorable, evocative and relevant. We hope to offer our clients the tools to distinguish themselves and foster consumer relationships that will stand the test of time.  </p>
+      </div>
+    </section>
+
+
+    <!-- Full width parallax image -->
+    <div class="parallax-image-01"></div>
+
+
+    <!-- Portfolio section -->
+    <section class="portfolio" id="portfolio">
+      <h1 class="port-title animated bounce-up">Portfolio</h1>
+      <h2 class="port-subtitle">Check out our work!</h2>
+
+      <div class="port-items">
+
+        <!-- Portfolio item 1: Eddie Rockets Snapchat Ads -->
+        <figure class="port-item featured">
+          <img src="img\portfolio-thumbnails\eddie-rockets-01.jpg" alt="Eddie Rockets thumbnail">
+          <figcaption>
+            <h3 class="port-item-title">Eddie Rockets</h3>
+            <p class="port-desc">Series of Snapchat adverts</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 1 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('../img/portfolio-headers/eddie-rockets-port-header.jpg');">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">Eddie Rockets</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">Series of Snapchat adverts</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video portrait">
+                  <iframe src="https://player.vimeo.com/video/280541343?color=ff6928&title=0&byline=0&portrait=0" width="1080" height="1920" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  <!-- <iframe src="https://vimeo.com/album/5300504/embed?color=ff6928&title=0&byline=0&portrait=0" width="1080" height="1920" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+                </div>
+              </div>
+
+              <!-- Project overview -->
+              <h3>Project:</h3>
+              <p>Eddie Rockets needed a video marketing solution to showcase a new range of burgers being developed for release in late 2017. They wanted a cost-effective strategy that would heighten awareness of their new range across a short time-scale and would engage as many consumers as possible. The ultimate goal was to translate views into sales.  </p>
+
+              <!-- Testimonial -->
+              <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">The creative delivered by Flourish Films was used on Eddie Rocket’s first ever Snapchat Ads campaign and it was a spectacular success. In the first month of the campaign, visits to the Eddie Rocket’s website were a multiple of what we had received in total for the previous 12 months and this drove an increase in online delivery orders of around 14% for the duration of the campaign. In addition, Flourish Films made the food look really appetising and there also was a less measurable value of brand consideration which no doubt drove footfall to our diners.</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Aidan Elder</h1>
+                    <h2 class="testimonial-subtitle">
+                        Marketing Manager<br>
+                        Eddie Rockets
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The idea was to launch a short series of videos (approx. 10s long) for release on Snapchat. The videos consisted of a concise and impactful structure which perfectly illustrated the new range. The series was maintained from November 2017 through to February of 2018, with a few alterations made at Christmas to adjust the visuals. The series played across the Snapchat ad interface, most notably the web view format. This allowed Eddie Rocket's target demographic to swipe up and quickly access a custom landing page, to view the new range and place an order, all within a matter of seconds. </p>
+
+              <!-- Paragraph 3: Results -->
+              <h3>Results:</h3>
+              <p>The strategy was a resounding success. Eddie Rockets saw an increase in web traffic from 30,000 to over 1 million and a simultaneous 14% increase in sales all within the first month. </p>
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 2: OffBeat: Macro Donut Idents -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\offbeat-macro-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">OffBeat Donuts</h3>
+            <p class="port-desc">Series of macro donut idents</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 2 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('../img/portfolio-headers/offbeat-macro-port-header.jpg');">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">OffBeat Donuts</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">Series of macro donut idents</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <!-- <iframe src="https://player.vimeo.com/video/280713854" width="640" height="360" frameborder="0" allowfullscreen></iframe> -->
+                  <iframe src="https://vimeo.com/album/5302734/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+
+                </div>
+              </div>
+
+              <!-- Project overview -->
+              <h3>Project:</h3>
+              <p>Offbeat required a release strategy to showcase a mixture of their current range of donuts as well as some new additions. The content had to be punchy, concise and appropriate for presentation on digital billboards in multiple shopping centers across Dublin. The series was in anticipation of the opening of a new store in Tallaght. It was to be showcased throughout the center, on in-store TVs and on a cinema screen located within the center. </p>
+
+              <!-- Testimonial -->
+              <!-- <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">Inset testimonial here</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Full Name</h1>
+                    <h2 class="testimonial-subtitle">
+                        Job Title<br>
+                        Company Name
+                    </h2>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The idea was to showcase the essence of each donut, capturing their unique character, the feelings they evoke and the senses they engage. The Flourish team developed an efficient production method which consisted of building a miniature set which they could design differently depending on the identity of each donut. The videos were playful and energetic, creatively utilising space, set design, toppings and fillings to illustrate Offbeat's fun-loving and passionate approach to the confectionery market, with an emphasis on the care, skill and thought put into developing their industry-shaping product. </p>
+
+              <!-- Paragraph 3: Results -->
+              <!-- <h3>Results:</h3>
+              <p>Lorem Ipsum</p> -->
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 3: Camile Thai -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\camile-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">Camile Thai</h3>
+            <p class="port-desc">Food and Lifestyle Highlights</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 3 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('../img/portfolio-headers/camile-port-header.jpg');">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">Camile Thai</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">Food and Lifestyle Highlights</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <iframe src="https://vimeo.com/album/5238576/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                </div>
+              </div>
+
+              <!-- Project overview -->
+              <h3>Project:</h3>
+              <p>Camile approached Flourish with a view to securing some content to showcase their menu across Ireland and the UK. The challenge was to produce content that not only demonstrated the superior quality of the food, but also hinted at the effortless incorporation of Camile into your dinner/evening plans. Additionally, the content had to be in keeping with Camile’s firmly established aesthetic, something the Flourish team had to emulate and hone for video release. </p>
+
+              <!-- Testimonial -->
+              <!-- <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">Inset testimonial here</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Full Name</h1>
+                    <h2 class="testimonial-subtitle">
+                        Job Title<br>
+                        Company Name
+                    </h2>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The series consists of two core components: a food showcase and lifestyle highlights. The first segment was produced on location in a Camile restaurant and was filmed using a dual camera setup positioned around a set that could be adjusted depending on the product. The second segment consisted of developing some short scenes with actors, intended to appeal to Camile's young, urban demographic, for whom eating Camile is a staple lifestyle component. The videos were released on YouTube, Facebook and Instagram across Ireland and the UK, with strategic releases for special dates. </p>
+
+              <!-- Paragraph 3: Results -->
+              <h3>Results:</h3>
+              <p>Strategic releases of certain videos garnered huge viewership and translated into significant sales increases. For instance, Camile were able to pay for the entire advert campaign from the sales increases generated by one video, a couples' movie night clip, which was strategically released before Valentine's Day. </p>
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 4: A1 Coaching -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\a1-consistency-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">A1 Coaching</h3>
+            <p class="port-desc">YouTube Web Series</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 4 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('../img/portfolio-headers/a1-coaching-port-header.png'); background-position: top;">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">A1 Coaching</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">YouTube Web Series</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <iframe src="https://player.vimeo.com/video/281074140?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                </div>
+              </div>
+
+              <!-- Paragraph 1: Project overview -->
+              <h3>Project:</h3>
+              <p>Anthony Walsh from A1 Coaching approached Flourish about the prospect of putting together a series of videos for release on YouTube to bolster membership of his cycling consultancy service, A1 Coaching.  Anthony had a very clear vision. He wanted videos that were punchy, entertaining, informative and that didn't take themselves too seriously. He wanted to share his expertise with the world and get viewers engaged on a regular basis. </p>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The plan was to launch a standalone, flagship video, entitled 'Consistency,' which would represent Anthony's ethos for successful training. This video was then followed by a series of short videos in a chat show format that featured him and various guests who would offer insight into the nuances of professional cycling. </p>
+
+              <!-- Testimonial -->
+              <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">Flourish Films came highly recommended from a friend who had worked with them in the past. I've been using their services on an on going basis for over 5 months and on every occasion they have surpassed my expectations.
+                                               The quality of their final product coupled with their professional approach make them a joy to work with.
+                                               I'd highly recommend Flourish Films to anyone in the market for top quality video.</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Anthony Walsh</h1>
+                    <h2 class="testimonial-subtitle">
+                        Director<br>
+                        A1 Coaching
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paragraph 3: Results -->
+              <!-- <h3>Results:</h3>
+              <p>Lorem Ipsum</p> -->
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- TODO: halfhourhero.txt removed 22/08/18 -->
+
+        <!-- Portfolio item 6: IRI -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\IRI-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">Irish Rugby Institute</h3>
+            <p class="port-desc">IRI TV Web Series</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 4 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/irish-rugby-institute-port-header.jpg');">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">Irish Rugby Institute</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">IRI TV Web Series</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <!-- TODO: Change video -->
+                  <iframe src="https://vimeo.com/album/5303046/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                </div>
+              </div>
+
+              <!-- Paragraph 1: Project overview -->
+              <h3>Project:</h3>
+              <p>The Irish Rugby Institute wanted to find a video solution that would allow them to promote their summer camps to students abroad, and an additional solution that would let them showcase their expertise online, mainly through Facebook. </p>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The team put together a project that consisted of a flagship video, documenting their clients' experiences on the summer camp that could be released on the IRI website and issued to foreign clubs and prospective clients on the IRI mailing list. The team also put together a web series for domestic release on Facebook that would consist of several short clips outlining and instructing on a specific rugby skill, offering insight on the best techniques and illustrating the care and attention that goes into IRI training services. </p>
+
+              <!-- Testimonial -->
+              <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">I've contracted Flourish on a number of occasions over the last couple of years for both my event management company and gym. The lads produce top end promotion material and what the lack in age they make up for in enthusiasm, application and IT knowledge. </p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Rossa Keane</h1>
+                    <h2 class="testimonial-subtitle">
+                        Director<br>
+                        Irish Rugby Institute
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paragraph 3: Results -->
+              <!-- <h3>Results:</h3>
+              <p>Lorem Ipsum</p> -->
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 7: Be the Office hero -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\offbeat-btoh-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">Be the office hero</h3>
+            <p class="port-desc">A comedic short for OffBeat Donuts</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 7 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/be-the-office-hero-port-header.jpg');">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">OffBeat Donuts</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">Be the office hero</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <iframe src="https://player.vimeo.com/video/280727313" width="640" height="360" frameborder="0" allowfullscreen></iframe>                </div>
+              </div>
+
+              <!-- Paragraph 1: Project overview -->
+              <h3>Project:</h3>
+              <p>Offbeat were a relatively young company when this first idea came to fruition. They wanted something that would register with consumers and make their brand something to talk about. Operating within an intensely competitive market in Dublin, the Offbeat team wanted to stand out and create a consistent strategy for continuous content that would solidify their identity. </p>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The idea evolved out of a service that Offbeat were offering, catering to corporate clients and events. The project lasted about a week and was one of the first large-scale productions for which the Flourish team have been responsible. The idea was to inject Offbeat energy, joy, passion and flavour into the archetypes of mundane situations. The comic element of this video (and the later series that developed out of it) was designed to act as a contrast to other marketing approaches within the industry and to engage consumers in a novel way. The video was released in tandem with a competition which encouraged viewers to tag their office heroes with a chance of winning donuts for their department. Each part of the production was catered to by the Flourish team; from procuring an original soundtrack to sourcing locations, actors, set components and editing/colour grading. </p>
+
+              <!-- Paragraph 3: Results -->
+              <h3>Results:</h3>
+              <p>The notion of the office hero began as a lightly satirical comment on office life and has since turned into a video marketing strategy capable of spanning demographics and endlessly evolving. The video received an aggregate 50 thousand views and 400 shares on its Facebook release, with the competition element of the release bolstering its shareability. Offbeat received an overwhelmingly positive response to the video and huge participation in the competition. It generated a lot of engagement with the company and solidified their position, not only as the leading donut company in Dublin, but as a fun, recognisable and strong brand. </p>
+
+              <!-- Testimonial -->
+              <!-- <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">I've contracted Flourish on a number of occasions over the last couple of years for both my event management company and gym. The lads produce top end promotion material and what the lack in age they make up for in enthusiasm, application and IT knowledge. </p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Rossa Keane</h1>
+                    <h2 class="testimonial-subtitle">
+                        Director<br>
+                        Irish Rugby Institute
+                    </h2>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 8: Be the Christmas hero -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\offbeat-btxh-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">Be the Christmas hero</h3>
+            <p class="port-desc">A comedic short for OffBeat Donuts</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 8 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/be-the-christmas-hero-port-header.jpg');">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">OffBeat Donuts</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">Be the Christmas hero</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <iframe src="https://player.vimeo.com/video/280728775" width="640" height="360" frameborder="0" allowfullscreen></iframe>                </div>
+              </div>
+
+              <!-- Paragraph 1: Project overview -->
+              <h3>Project:</h3>
+              <p>The success of the 'Be The Office Hero' video spurred Offbeat on to demand a series of videos along a similar theme. They wanted to further compound their brand but cater to a new demographic and adapt the message to cover, not only new scenarios, but different times of year. The video is the first installment of a three-part Facebook series.</p>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The idea flows from the same motif established in 'Be The Office Hero.' A character saves the day by entering dramatically, brandishing Offbeat donuts. The production took the bulk of a week from start to finish and was released in early December to catch the Christmas wave. Each part of the production was catered to by the Flourish team; from procuring music to sourcing locations, actors, set components and editing/colour grading. </p>
+
+              <!-- Paragraph 3: Results -->
+              <h3>Results:</h3>
+              <p>The video received an aggregate 93 thousand views, almost twice the number of views garnered by the first Offbeat video without any other changes. People were eagerly awaiting it's release and this sparked natural growth. </p>
+
+              <!-- Testimonial -->
+              <!-- <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">Insert testimonial here.</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Full Name</h1>
+                    <h2 class="testimonial-subtitle">
+                        Job Title<br>
+                        Company Name
+                    </h2>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- TODO: lifehacks.txt removed 22/08/18 -->
+
+        <!-- Portfolio item 10: RTÉ: Directors in dialogue -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\directors-in-dialogue-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">Directors in dialogue</h3>
+            <p class="port-desc">A collection of interviews with directors done for RTÉ Culture</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 10 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/directors-in-dialogue-port-header.jpg'); background-position: top right;">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">Directors in dialogue</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">A collection of interviews with directors done for RTÉ Culture</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <iframe src="https://player.vimeo.com/video/285870167?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                </div>
+              </div>
+
+              <!-- Paragraph 1: Project overview -->
+              <h3>Project:</h3>
+              <p>The Flourish team were fortunate enough to be invited to provide video services for RTÉ and the Screen Directors' Guild of Ireland. The two groups were involved in producing a four-part web series for release on the RTÉ Culture website which would offer a snapshot into life in the Irish Film and TV industry. </p>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The content was filmed live, with four of Ireland's top TV and Film directors offering their unique perspectives on the challenges faced by Irish directors, the idiosyncrasies of the industry and prospects for Irish film. The footage was compiled into four web videos, each approximately 45 minutes in length available on the RTÉ Culture website. </p>
+
+              <!-- Paragraph 3: Results -->
+              <!-- <h3>Results:</h3>
+              <p>Lorem Ipsum</p> -->
+
+              <!-- Testimonial -->
+              <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">We worked with Ben and the team on a series of interviews with Irish filmmakers, created in association with Screen Directors Guild Ireland - they delivered above and beyond on every capacity, from shoot to delivery, and did great work. We're looking forward to working with them again.</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Derek O'Connor</h1>
+                    <h2 class="testimonial-subtitle">
+                        Editor<br>
+                        RTÉ
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 11: Paintball video -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\skirmish-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">Capture the flag</h3>
+            <p class="port-desc">Tongue in cheek short.</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 11 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/apocapaint-now-port-header.jpg');">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">Capture the flag</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">Tongue in cheek short</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <iframe src="https://player.vimeo.com/video/280733451" width="640" height="360" frameborder="0" allowfullscreen></iframe>                </div>
+              </div>
+
+              <!-- Paragraph 1: Project overview -->
+              <h3>Project:</h3>
+              <p>This was a unique project which started as a commercial production but ended up being a passion project for the Flourish team and something that could be used to showcase the narrative-intense side of the team's work. </p>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The project was produced by the Flourish team from start to finish, filmed on location over the course of a day and incorporated professional actors and composers. The project gave the team the rare opportunity to take full creative license and explore and resource an idea from a non-marketing perspective. In hindsight, the short film could likely double as an effective campaign for a paintball company if a proper release strategy was put in place. </p>
+
+              <!-- Paragraph 3: Results -->
+              <!-- <h3>Results:</h3>
+              <p>Lorem Ipsum</p> -->
+
+              <!-- Testimonial -->
+              <!-- <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">Insert testimonial here</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Full Name</h1>
+                    <h2 class="testimonial-subtitle">
+                        Job Title<br>
+                        Company Name
+                    </h2>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 12: BordBia: Gardening -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\bordbia-gardening-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">BordBia: Gardening</h3>
+            <p class="port-desc">A video summarising the key findings of recent research.</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 12 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/bordbia-gardening-port-header.jpg');">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">BordBia</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">Gardening research presentation</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <iframe src="https://player.vimeo.com/video/280735529" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <!-- Paragraph 1: Project overview -->
+              <h3>Project:</h3>
+              <p>BordBia approached Flourish through REDC Research and Marketing about the prospect of putting together a short explainer video for internal BordBia release. </p>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The project involved the team utilising a number of locations across the city to capture shots that represented the information to be presented to the BordBia team. BordBia felt that the video was a very efficient way of conveying key information, targets and areas where there was room for improvement. </p>
+
+              <!-- Paragraph 3: Results -->
+              <!-- <h3>Results:</h3>
+              <p>Lorem Ipsum</p> -->
+
+              <!-- Testimonial -->
+              <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">We needed Flourish to be creative, resourceful, professional and “on-brief”.  They didn’t disappoint.  We look forward to working with Flourish again in the development of impactful, compelling and commercially orientated film</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">David Cullen</h1>
+                    <h2 class="testimonial-subtitle">
+                        Director<br>
+                        REDC Research
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 13: Provident CRM -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\provident-crm-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">Provident CRM</h3>
+            <p class="port-desc">CRM Ireland Event Coverage</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 13 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/provident-crm-port-header.jpg'); background-position: top;">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">Provident CRM</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">CRM Ireland Event Coverage</h2>
+              <!-- Video player -->
+              <div class="port-video-container">
+                <div class="port-video">
+                  <iframe src="https://vimeo.com/album/5367179/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                </div>
+              </div>
+
+              <!-- Paragraph 1: Project overview -->
+              <h3>Project:</h3>
+              <p>This project involved a combination of live event coverage for a series of lectures hosted by Provident CRM and supplementary interviews with the project leaders responsible for spearheading some of the industry's most advanced CRM technologies. </p>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The speakers were filmed live and interviews were staged and captured in a full setup later throughout the event. </p>
+
+              <!-- Paragraph 3: Results -->
+              <!-- <h3>Results:</h3>
+              <p>Lorem Ipsum</p> -->
+
+              <!-- Testimonial -->
+              <!-- <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">Insert testimionial here.</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Full Name</h1>
+                    <h2 class="testimonial-subtitle">
+                        Job Title<br>
+                        Company Name
+                    </h2>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- TODO: bodymed.txt removed 22/08/18 -->
+
+        <!-- Portfolio item 15: Penguin: Jeff Kinney Tour -->
+        <figure class="port-item">
+          <img src="img\portfolio-thumbnails\penguin-thumb-01.jpg" alt="Portfolio item">
+          <figcaption>
+            <h3 class="port-item-title">Penguin Publishing</h3>
+            <p class="port-desc">Jeff Kinney: World Tour</p>
+            <a href="#" class="port-link">More info</a>
+          </figcaption>
+
+          <!-- Portfolio modal 14 -->
+          <div class="port-modal">
+            <button class="port-modal-close">
+              <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+            </button>
+
+            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/penguin-port-header.png');">
+              <div class="port-modal-title-box">
+                <h1 class="port-title">Penguin Publishing</h1>
+              </div>
+            </div>
+            <div class="port-modal-content">
+              <h2 class="port-subtitle">Jeff Kinney: World Tour</h2>
+              <!-- Video player -->
+              <!-- <div class="port-video-container">
+                <div class="port-video"> -->
+                  <!-- TODO: Change video -->
+                  <!-- <iframe src="https://vimeo.com/album/5238576/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                </div>
+              </div> -->
+
+              <!-- Paragraph 1: Project overview -->
+              <h3>Project:</h3>
+              <p>As part of the launch for the 12th book in the Diary of a Wimpy Kid series, the author, Jeff Kinney, took part in a worldwide tour, offering fans of the series the opportunity to meet him, receive signed copies of the latest book and instructive lessons on some story-writing and drawing fundamentals. The challenge was to document the Dublin portion of Jeff's tour. </p>
+
+              <!-- Paragraph 2: Strategy -->
+              <h3>Strategy:</h3>
+              <p>The Flourish team liaised with Penguin and organised to follow Jeff around Dublin to the various events that had been arranged for him, ranging from radio presentations to book signing to photos with students. All the events were captured live and organised to be sent to an editor abroad who was responsible for rounding off the finished product.<br>
+                 <br>The full world tour video has yet to be released - check back here soon!</p>
+
+              <!-- Paragraph 3: Results -->
+              <!-- <h3>Results:</h3>
+              <p>Lorem Ipsum</p> -->
+
+              <!-- Testimonial -->
+              <!-- <div class="port-testimonial-container">
+                <div class="port-testimonial">
+                  <p class="testimonial-quote">Insert testimionial here.</p>
+                  <div class="author-details">
+                    <h1 class="testimonial-title">Full Name</h1>
+                    <h2 class="testimonial-subtitle">
+                        Job Title<br>
+                        Company Name
+                    </h2>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+            </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Add new portfolio items here -->
+      </div>
+    </section>
+
+
+    <!-- Trusted by section -->
+    <section class="trustedby" id="trusted-by">
+      <h1 class="trustedby-title">Trusted By</h1>
+      <h2 class="trustedby-subtitle">Some of Irelands top brands</h2>
+
+      <div class="trustedby-logos">
+        <img class="trustedby-logo" src="img/client-logos/RTÉ-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/Camile-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/allianz-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/REDC-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/a1-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/audilab-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/bodymed-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/OffBeat-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/bordbia-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/eddie-rockets-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/IRI-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/penguin-logopng.jpg">
+        <img class="trustedby-logo" src="img/client-logos/provident-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/romayos-logo.jpg">
+        <img class="trustedby-logo" src="img/client-logos/sdgi-logo.jpg">
+      </div>
+
+    </section>
+
+
+
+
+    <!-- Contact us section -->
+    <section class="contactUs" id="contact-us">
+      <h1 class="contactUs-title animated bounce-up">Contact Us</h1>
+      <h2 class="contactUs-subtitle">Lets start your project today!</h2>
+      <div class="contactUs-details">
+        <div class="phone-container">
+          <img class="contactUs-icons" src="img/contact-us-icons/call.svg" onerror="this.src='img/call.png'" alt="call">
+          <h2 class="contactUs-phone">086 7377087</h2>
+        </div>
+        <div class="email-container">
+          <img class="contactUs-icons" src="img/contact-us-icons/message.svg" onerror="this.src='img/message.png'" alt="call">
+          <h2 class="contactUs-email">info@flourishfilms.ie</h2>
+        </div>
+      </div>
+
+      <form class="contactUs-form" action="php/form-to-email.php" method="POST">
+        <input class="name" type="text" name="name" placeholder="Name">
+        <input class="email" type="email" name="email" placeholder="Email">
+        <textarea class="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+        <input class="contactUs-submit-button button" type="submit" value="SUBMIT">
+      </form>
+    </section>
+
+
+    <!-- Footer section -->
+    <footer>
+      <h2 class="footer-title">Follow us on social</h2>
+      <div class="footer-social-icons">
+        <a href="https://www.facebook.com/flourishfilmsireland/" target="_blank">
+          <img class="footer-social-icon" src="img/social-icons/facebook_icon-v2.png" alt="Facebook logo">
+        </a>
+        <a href="https://www.linkedin.com/company/flourish-films/" target="_blank">
+          <img class="footer-social-icon" src="img/social-icons/linkedin_icon-v2.png" alt="Linkedin logo">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="footer-social-icon" src="img/social-icons/twitter_icon-v2.png" alt="Twitter logo">
+        </a>
+        <a href="https://vimeo.com/flourishfilmsireland" target="_blank">
+          <img class="footer-social-icon" src="img/social-icons/vimeo_icon-v2.png" alt="Vimeo logo">
+        </a>
+      </div>
+      <p class="footer-copyright">Copyright 2018 Flourish</p>
+    </footer>
+
+
+    <!-- *** Script imports *** -->
+
+    <!-- Bootstrap script imports-->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- Custom script imports -->
+    <script src="js/nav.js"></script>
+    <script src="js/startup.js"></script>
+    <script src="js/portfolio-modal.js"></script>
+    <script src="js/scroll-animations.js"></script>
+
+    <?php include('php/form-to-email.php'); ?>
+
+
+</body>
+</html>

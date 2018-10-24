@@ -1,0 +1,62 @@
+<!-- Portfolio item 14: BodyMed -->
+<figure class="port-item">
+  <img src="img\portfolio-thumbnails\bodymed-thumb-01.jpg" alt="Portfolio item">
+  <figcaption>
+    <h3 class="port-item-title">BodyMed</h3>
+    <p class="port-desc">Social media video series</p>
+    <a href="#" class="port-link">More info</a>
+  </figcaption>
+
+  <!-- Portfolio modal 14 -->
+  <div class="port-modal">
+    <button class="port-modal-close">
+      <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+    </button>
+
+    <div class="port-modal-header" style="background-image: url('img/portfolio-headers/bodymed-port-header.jpg');">
+      <div class="port-modal-title-box">
+        <h1 class="port-title">BodyMed</h1>
+      </div>
+    </div>
+    <div class="port-modal-content">
+      <h2 class="port-subtitle">Social media video series</h2>
+      <!-- Video player -->
+      <div class="port-video-container">
+        <div class="port-video">
+          <!-- TODO: Change video -->
+          <iframe src="https://vimeo.com/album/5238576/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <!-- Paragraph 1: Project overview -->
+      <h3>Project:</h3>
+      <p>The team of medical professionals at BodyMed wanted a series of videos highlighting their specific practice areas and documenting some key advice for clients who want to make simple changes to improve their health. </p>
+
+      <!-- Paragraph 2: Strategy -->
+      <h3>Strategy:</h3>
+      <p>The series consisted of a mixture of demonstration videos of particular techniques spanning physiotherapy, acupuncture and nutrition. The demonstrations were accompanied by interviews which offered prospective and current clients an additional insight into the level of expertise possessed by the BodyMed team, giving them a taste of the care and attention that goes into every aspect of their services and advice. </p>
+
+      <!-- Paragraph 3: Results -->
+      <!-- <h3>Results:</h3>
+      <p>Lorem Ipsum</p> -->
+
+      <!-- Testimonial -->
+      <!-- <div class="port-testimonial-container">
+        <div class="port-testimonial">
+          <p class="testimonial-quote">Insert testimionial here.</p>
+          <div class="author-details">
+            <h1 class="testimonial-title">Full Name</h1>
+            <h2 class="testimonial-subtitle">
+                Job Title<br>
+                Company Name
+            </h2>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
+
+    </div>
+  </div>
+  <!-- /modal -->
+</figure>

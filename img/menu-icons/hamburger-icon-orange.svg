@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.077 17.602">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff6928;
+      }
+    </style>
+  </defs>
+  <g id="ico" transform="translate(-13 -16)">
+    <path id="ico-2" data-name="ico" class="cls-1" d="M11.408,17.6a.978.978,0,0,1,0-1.956H25.1a.978.978,0,0,1,0,1.956ZM.978,9.779a.978.978,0,1,1,0-1.956H25.1a.978.978,0,0,1,0,1.956Zm0-7.823A.978.978,0,1,1,.978,0h13.69a.978.978,0,1,1,0,1.956Z" transform="translate(13 16)"/>
+  </g>
+</svg>

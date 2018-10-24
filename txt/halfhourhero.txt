@@ -1,0 +1,56 @@
+<!-- Portfolio item 5: Half Hour Hero -->
+<figure class="port-item">
+  <img src="img\portfolio-thumbnails\half-hour-hero-thumb-01.jpg" alt="Portfolio item">
+  <figcaption>
+    <h3 class="port-item-title">Half hour hero</h3>
+    <p class="port-desc">Cookery book launch</p>
+    <a href="#" class="port-link">More info</a>
+  </figcaption>
+
+  <!-- Portfolio modal 5 -->
+  <div class="port-modal">
+    <button class="port-modal-close">
+      <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
+    </button>
+
+    <div class="port-modal-header" style="background-image: url('img/portfolio-headers/half-hour-hero-port-header.jpg');">
+      <div class="port-modal-title-box">
+        <h1 class="port-title">Half hour hero</h1>
+      </div>
+    </div>
+    <div class="port-modal-content">
+      <h2 class="port-subtitle">Cookery book launch</h2>
+      <!-- Video player -->
+      <div class="port-video-container">
+        <div class="port-video">
+          <iframe src="https://player.vimeo.com/video/143263023?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+      </div>
+
+      <!-- Project description - Paragraph 1 -->
+      <h3>Project:</h3>
+      <p>Penguin Random House, the book publisher, wanted to do something to build awareness ahead of the launch of Roz Purcell's new cookery book, "Half Hour Hero", aimed at busy, on-the-go mothers trying to still eat healthily.</p>
+
+      <h3>Strategy:</h3>
+      <p>Our plan was to create an engaging and entertaining piece utilising Roz Purcell's online following to help raise awareness. We ran a Q&A with Roz while she prepared one of the dishes from her new book.</p>
+
+      <!-- Testimonial -->
+      <!-- <div class="port-testimonial-container">
+        <div class="port-testimonial">
+          <p class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit leo ac sapien malesuada efficitur. Pellentesque id vehicula felis. Integer sed rhoncus enim. Aliquam rhoncus tempus augue, a dapibus nunc molestie non. </p>
+          <div class="author-details">
+            <h1 class="testimonial-title">Aidan Elder</h1>
+            <h2 class="testimonial-subtitle">
+                Marketing Manager<br>
+                Eddie Rockets
+            </h2>
+          </div>
+        </div>
+      </div> -->
+
+
+    </div>
+  </div>
+  <!-- /modal -->
+</figure>

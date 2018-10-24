@@ -1,0 +1,61 @@
+.about{
+  padding: 4.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about-title{
+
+}
+
+.about-subtitle{
+  text-align: center;
+  margin-bottom: 1.7em;
+  letter-spacing: .08em;
+}
+
+.showreel-container{
+    width: 95%;
+    max-width: 50em;
+    margin: 0 auto 2.15em;
+
+    @include mq{
+      margin: 0 auto 3em;
+    }
+}
+
+.about-showreel{
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.about-showreel iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.about-text{
+  color: rgba($grey, .8);
+  width: 95%;
+  max-width: 50em;
+}
+
+.parallax-image-01{
+  height: 40vh;
+  width: 100%;
+  background-image: url("../img/parallax-img-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+
+  @include mq ($width: 64em){
+    background-attachment: fixed;
+  }
+}

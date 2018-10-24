@@ -1,0 +1,106 @@
+.contactUs{
+  padding: 4.5em 2em;
+  background: $dark-blue;
+}
+
+.contactUs-title{
+  text-align: center;
+}
+
+.contactUs-subtitle{
+  color: $white;
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+
+.contactUs-details{
+  width: 20em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.phone-container,
+.email-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.contactUs-icons{
+  width: 12.5vw;
+  max-width: 4em;
+}
+
+.contactUs-phone,
+.contactUs-email {
+  color: $white;
+  font-family: $ff-ss;
+  font-size: 1.2rem;
+  text-transform: none;
+  margin: 0 0 0 1em;
+
+  @include mq{
+    font-size: 1.6rem;
+  }
+}
+
+.contactUs-form{
+  margin: 4em auto 0;
+  max-width: 40em;
+
+  display: flex;
+  flex-direction: column;
+
+  @supports (display: grid){
+    @include mq{
+      display: grid;
+      grid-column-gap: 1em;
+      grid-template-areas:
+        "name     email"
+        "message  message"
+        "   .     button";
+
+      .name{
+        grid-area: name;
+      }
+
+      .email{
+        grid-area: email;
+      }
+
+      .message{
+        grid-area: message;
+      }
+
+      .button{
+        grid-area: button;
+      }
+    }
+  }
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto 1.5em;
+  padding: .75em;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+
+  color: rgba($dark-blue, .56);
+  font-family: $ff-ss;
+  font-size: 1.125rem;
+  letter-spacing: .020em;
+}
+
+.contactUs-submit-button{
+  display: block;
+  background: $accent;
+  color: $white;
+  font-weight: $fw-b;
+  letter-spacing: .07em;
+  padding: 1.25em;
+
+}
