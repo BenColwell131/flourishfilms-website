@@ -1,4 +1,10 @@
+
 var portfolioContainer = document.querySelector('.port-items')
+
+var modalBLazy = new Blazy({
+  // configure blazy.js options here
+  container: '.port-modal'
+});
 
 portfolioContainer.addEventListener('click', function(e) {
   e.preventDefault()
@@ -18,6 +24,8 @@ portfolioContainer.addEventListener('click', function(e) {
     //Remove main page scroll bar
     document.body.style.overflowY = 'hidden'
     document.body.scroll = 'no'
+
+    modalBLazy.revalidate()
   }
 
   var modalClose = function() {
@@ -33,6 +41,6 @@ portfolioContainer.addEventListener('click', function(e) {
     // Waits for the end of animation before actually closing the modal.
     modal.addEventListener('animationend', modalClose)
   })
-  
+
   modalOpen()
 })
