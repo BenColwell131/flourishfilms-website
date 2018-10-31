@@ -14,17 +14,6 @@
     <!-- Custom CSS import -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
-    <!-- blazy.js imports & setup -->
-    <script src="blazy.min.js"></script>
-    <script>
-        ;(function() {
-            // Initialize
-            var bLazy = new Blazy({
-              // configure blazy.js options here
-            });
-        })();
-    </script>
-
 </head>
 
 <!-- === BODY START === -->
@@ -1062,6 +1051,17 @@
     <script src="js/startup.js"></script>
     <script src="js/portfolio-modal.js"></script>
     <script src="js/scroll-animations.js"></script>
+
+    <!-- blazy.js imports & setup -->
+    <script src="js/blazy.js"></script>
+    <script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy({
+              // configure blazy.js options here
+            });
+        })();
+    </script>
 
     <!-- PHP imports -->
     <?php include('php/form-to-email.php'); ?>
