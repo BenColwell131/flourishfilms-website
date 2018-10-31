@@ -14,6 +14,16 @@
     <!-- Custom CSS import -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
+    <!-- blazy.js imports & setup -->
+    <script src="blazy.min.js"></script>
+    <script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy({
+              // configure blazy.js options here
+            });
+        })();
+    </script>
 
 </head>
 
@@ -208,7 +218,7 @@
 
         <!-- Portfolio item 1: Eddie Rockets Snapchat Ads -->
         <figure class="port-item featured">
-          <img src="img\portfolio-thumbnails\eddie-rockets-01.jpg" alt="Eddie Rockets thumbnail">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\eddie-rockets-01.jpg" alt="Eddie Rockets thumbnail">
           <figcaption>
             <h3 class="port-item-title">Eddie Rockets</h3>
             <p class="port-desc">Series of Snapchat adverts</p>
@@ -271,7 +281,7 @@
 
         <!-- Portfolio item 2: OffBeat: Macro Donut Idents -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\offbeat-macro-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\offbeat-macro-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">OffBeat Donuts</h3>
             <p class="port-desc">Series of macro donut idents</p>
@@ -335,7 +345,7 @@
 
         <!-- Portfolio item 3: Camile Thai -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\camile-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\camile-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Camile Thai</h3>
             <p class="port-desc">Food and Lifestyle Highlights</p>
@@ -397,7 +407,7 @@
 
         <!-- Portfolio item 4: A1 Coaching -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\a1-consistency-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\a1-consistency-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">A1 Coaching</h3>
             <p class="port-desc">YouTube Web Series</p>
@@ -463,7 +473,7 @@
 
         <!-- Portfolio item 6: IRI -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\IRI-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\IRI-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Irish Rugby Institute</h3>
             <p class="port-desc">IRI TV Web Series</p>
@@ -526,7 +536,7 @@
 
         <!-- Portfolio item 7: Be the Office hero -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\offbeat-btoh-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\offbeat-btoh-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Be the office hero</h3>
             <p class="port-desc">A comedic short for OffBeat Donuts</p>
@@ -587,7 +597,7 @@
 
         <!-- Portfolio item 8: Be the Christmas hero -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\offbeat-btxh-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\offbeat-btxh-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Be the Christmas hero</h3>
             <p class="port-desc">A comedic short for OffBeat Donuts</p>
@@ -650,7 +660,7 @@
 
         <!-- Portfolio item 10: RTÉ: Directors in dialogue -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\directors-in-dialogue-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\directors-in-dialogue-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Directors in dialogue</h3>
             <p class="port-desc">A collection of interviews with directors done for RTÉ Culture</p>
@@ -712,7 +722,7 @@
 
         <!-- Portfolio item 11: Paintball video -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\skirmish-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\skirmish-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Capture the flag</h3>
             <p class="port-desc">Tongue in cheek short.</p>
@@ -773,7 +783,7 @@
 
         <!-- Portfolio item 12: BordBia: Gardening -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\bordbia-gardening-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\bordbia-gardening-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">BordBia: Gardening</h3>
             <p class="port-desc">A video summarising the key findings of recent research.</p>
@@ -835,7 +845,7 @@
 
         <!-- Portfolio item 13: Provident CRM -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\provident-crm-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\provident-crm-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Provident CRM</h3>
             <p class="port-desc">CRM Ireland Event Coverage</p>
@@ -899,7 +909,7 @@
 
         <!-- Portfolio item 15: Penguin: Jeff Kinney Tour -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\penguin-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\penguin-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Penguin Publishing</h3>
             <p class="port-desc">Jeff Kinney: World Tour</p>
@@ -1046,7 +1056,6 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
 
     <!-- Custom script imports -->
     <script src="js/nav.js"></script>
@@ -1054,6 +1063,7 @@
     <script src="js/portfolio-modal.js"></script>
     <script src="js/scroll-animations.js"></script>
 
+    <!-- PHP imports -->
     <?php include('php/form-to-email.php'); ?>
 
 

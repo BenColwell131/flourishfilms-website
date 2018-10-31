@@ -23,12 +23,9 @@ portfolioContainer.addEventListener('click', function(e) {
   var modalClose = function() {
     modal.classList.remove('active')
     modal.removeEventListener('animationend', modalClose)
-
   }
 
   closeButton.addEventListener('click', function(){
-
-
     modal.style.animation = 'modalFadeOut 250ms forwards'
     //Restore main page scroll bar
     document.body.style.overflowY = 'scroll'
@@ -36,5 +33,6 @@ portfolioContainer.addEventListener('click', function(e) {
     // Waits for the end of animation before actually closing the modal.
     modal.addEventListener('animationend', modalClose)
   })
+  
   modalOpen()
 })
