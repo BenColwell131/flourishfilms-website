@@ -356,6 +356,13 @@ textarea:focus,
 button:focus {
   outline: none; }
 
+.b-lazy {
+  opacity: 0;
+  transition: opacity 500ms; }
+
+.b-loaded {
+  opacity: 1; }
+
 .nav-open-button {
   cursor: pointer;
   position: fixed;
