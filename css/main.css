@@ -368,7 +368,7 @@ button:focus {
   position: fixed;
   top: 1vw;
   left: 1vw;
-  z-index: 99;
+  z-index: 80;
   background: transparent;
   border: 0;
   padding: .5em; }
@@ -796,7 +796,7 @@ nav ul {
 .port-modal {
   position: fixed;
   background: #FFFFFF;
-  z-index: 99;
+  z-index: 90;
   top: 2em;
   bottom: 2em;
   left: 2em;
@@ -828,6 +828,14 @@ nav ul {
   position: fixed;
   left: 1em;
   top: 1em; }
+
+.port-modal-close-link {
+  background: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+  padding: 1em; }
+  .port-modal-close-link h2 {
+    color: #FF6928; }
 
 .port-modal-header {
   text-align: left;

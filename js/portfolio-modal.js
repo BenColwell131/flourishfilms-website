@@ -16,13 +16,14 @@ portfolioContainer.addEventListener('click', function(e) {
   // Select the relevant portfolio modal
   var modal = modalToggle.parentNode.nextElementSibling
   var closeButton = modal.querySelector('.port-modal-close')
+  var closeLink = modal.querySelector('.port-modal-close-link')
 
   var modalOpen = function() {
     modal.classList.add('active')
     modal.style.animation = 'modalFadeIn 250ms forwards'
 
     //Remove main page scroll bar
-    document.body.style.overflowY = 'hidden'
+    document.body.style.overflow = 'hidden'
     document.body.scroll = 'no'
 
     modalBLazy.revalidate()
@@ -42,5 +43,14 @@ portfolioContainer.addEventListener('click', function(e) {
     modal.addEventListener('animationend', modalClose)
   })
 
+  closeLink.addEventListener('click', function(){
+    modal.style.animation = 'modalFadeOut 250ms forwards'
+    //Restore main page scroll bar
+    document.body.style.overflowY = 'scroll'
+    document.body.scroll = 'yes'
+    // Waits for the end of animation before actually closing the modal.
+    modal.addEventListener('animationend', modalClose)
+  })
+  
   modalOpen()
 })
