@@ -22,9 +22,12 @@ portfolioContainer.addEventListener('click', function(e) {
     modal.classList.add('active')
     modal.style.animation = 'modalFadeIn 250ms forwards'
 
-    //Remove main page scroll bar
+    // Remove main page scroll bar
     document.body.style.overflow = 'hidden'
     document.body.scroll = 'no'
+
+    // Disable main page touch controls
+    document.body.style.touchAction = 'none'
 
     modalBLazy.revalidate()
   }
@@ -36,9 +39,13 @@ portfolioContainer.addEventListener('click', function(e) {
 
   closeButton.addEventListener('click', function(){
     modal.style.animation = 'modalFadeOut 250ms forwards'
-    //Restore main page scroll bar
+    // Restore main page scroll bar
     document.body.style.overflowY = 'scroll'
     document.body.scroll = 'yes'
+
+    // Restore main page touch controls
+    document.body.style.touchAction = 'auto'
+
     // Waits for the end of animation before actually closing the modal.
     modal.addEventListener('animationend', modalClose)
   })
@@ -51,6 +58,6 @@ portfolioContainer.addEventListener('click', function(e) {
     // Waits for the end of animation before actually closing the modal.
     modal.addEventListener('animationend', modalClose)
   })
-  
+
   modalOpen()
 })

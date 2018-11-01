@@ -1,6 +1,5 @@
 Todo:
 Switch iFrame to SweetMedia style
-Lazy loading
+
 Srcset for mobile optimisation
 srcset for parallax image
-bootstrap call needed?
