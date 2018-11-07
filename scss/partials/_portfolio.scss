@@ -168,10 +168,18 @@
 
 // Start of modal CSS
 
+body.modal-open{
+    //Kinda works but sets home page to top again.
+    // position: fixed;
+    overflow: hidden;
+    touch-action: none;
+    -webkit-overflow-scrolling: touch;
+}
+
 .port-modal {
   position: fixed;
   background: $white;
-  z-index: 99;
+  z-index: 90;
   top: 2em;
   bottom: 2em;
   left: 2em;
@@ -209,6 +217,17 @@
   position: fixed;
   left: 1em;
   top: 1em;
+}
+
+.port-modal-close-link{
+  background: $white;
+  border: 0;
+  cursor: pointer;
+  padding: 1em;
+
+  h2{
+    color: $accent;
+  }
 }
 
 .port-modal-header{

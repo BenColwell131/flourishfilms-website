@@ -8,13 +8,10 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
     <!-- Bootstrap import -->
-    <!-- TODO: Not sure I need to import the whole bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
     <!-- Custom CSS import -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
-
-
 </head>
 
 <!-- === BODY START === -->
@@ -181,10 +178,11 @@
     <section class="about" id="about-us">
       <h1 class="about-title animated bounce-up">What we do</h1>
       <h2 class="about-subtitle">Welcome to Flourish Films and welcome to the video marketing experience</h2>
+
       <!-- Showreel video here -->
       <div class="showreel-container">
         <div class="about-showreel">
-          <iframe src="https://player.vimeo.com/video/275648683" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe class="b-lazy" data-src="https://player.vimeo.com/video/275648683" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
 
@@ -208,7 +206,7 @@
 
         <!-- Portfolio item 1: Eddie Rockets Snapchat Ads -->
         <figure class="port-item featured">
-          <img src="img\portfolio-thumbnails\eddie-rockets-01.jpg" alt="Eddie Rockets thumbnail">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\eddie-rockets-01.jpg" alt="Eddie Rockets thumbnail">
           <figcaption>
             <h3 class="port-item-title">Eddie Rockets</h3>
             <p class="port-desc">Series of Snapchat adverts</p>
@@ -221,7 +219,8 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('../img/portfolio-headers/eddie-rockets-port-header.jpg');">
+            <div class="port-modal-header b-lazy" data-src="../img/portfolio-headers/eddie-rockets-port-header.jpg">
+
               <div class="port-modal-title-box">
                 <h1 class="port-title">Eddie Rockets</h1>
               </div>
@@ -231,7 +230,7 @@
               <!-- Video player -->
               <div class="port-video-container">
                 <div class="port-video portrait">
-                  <iframe src="https://player.vimeo.com/video/280541343?color=ff6928&title=0&byline=0&portrait=0" width="1080" height="1920" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  <iframe class="b-lazy" data-src="https://player.vimeo.com/video/280541343?color=ff6928&title=0&byline=0&portrait=0" width="1080" height="1920" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   <!-- <iframe src="https://vimeo.com/album/5300504/embed?color=ff6928&title=0&byline=0&portrait=0" width="1080" height="1920" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
                 </div>
               </div>
@@ -265,13 +264,16 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
 
         <!-- Portfolio item 2: OffBeat: Macro Donut Idents -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\offbeat-macro-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\offbeat-macro-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">OffBeat Donuts</h3>
             <p class="port-desc">Series of macro donut idents</p>
@@ -284,7 +286,9 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('../img/portfolio-headers/offbeat-macro-port-header.jpg');">
+            <!-- <div class="port-modal-header" style="background-image: url('../img/portfolio-headers/offbeat-macro-port-header.jpg');"> -->
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/offbeat-macro-port-header.jpg">
+
               <div class="port-modal-title-box">
                 <h1 class="port-title">OffBeat Donuts</h1>
               </div>
@@ -295,7 +299,7 @@
               <div class="port-video-container">
                 <div class="port-video">
                   <!-- <iframe src="https://player.vimeo.com/video/280713854" width="640" height="360" frameborder="0" allowfullscreen></iframe> -->
-                  <iframe src="https://vimeo.com/album/5302734/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                  <iframe class="b-lazy" data-src="https://vimeo.com/album/5302734/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
 
                 </div>
               </div>
@@ -329,13 +333,16 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
 
         <!-- Portfolio item 3: Camile Thai -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\camile-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\camile-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Camile Thai</h3>
             <p class="port-desc">Food and Lifestyle Highlights</p>
@@ -348,7 +355,7 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('../img/portfolio-headers/camile-port-header.jpg');">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/camile-port-header.jpg">
               <div class="port-modal-title-box">
                 <h1 class="port-title">Camile Thai</h1>
               </div>
@@ -358,7 +365,7 @@
               <!-- Video player -->
               <div class="port-video-container">
                 <div class="port-video">
-                  <iframe src="https://vimeo.com/album/5238576/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                  <iframe class="b-lazy" data-src="https://vimeo.com/album/5238576/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
                 </div>
               </div>
 
@@ -391,13 +398,16 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
 
         <!-- Portfolio item 4: A1 Coaching -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\a1-consistency-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\a1-consistency-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">A1 Coaching</h3>
             <p class="port-desc">YouTube Web Series</p>
@@ -410,7 +420,7 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('../img/portfolio-headers/a1-coaching-port-header.png'); background-position: top;">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/a1-coaching-port-header.png">
               <div class="port-modal-title-box">
                 <h1 class="port-title">A1 Coaching</h1>
               </div>
@@ -420,7 +430,7 @@
               <!-- Video player -->
               <div class="port-video-container">
                 <div class="port-video">
-                  <iframe src="https://player.vimeo.com/video/281074140?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                  <iframe class="b-lazy" data-src="https://player.vimeo.com/video/281074140?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
                 </div>
               </div>
 
@@ -455,6 +465,9 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
@@ -463,20 +476,20 @@
 
         <!-- Portfolio item 6: IRI -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\IRI-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\IRI-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Irish Rugby Institute</h3>
             <p class="port-desc">IRI TV Web Series</p>
             <a href="#" class="port-link">More info</a>
           </figcaption>
 
-          <!-- Portfolio modal 4 -->
+          <!-- Portfolio modal 6 -->
           <div class="port-modal">
             <button class="port-modal-close">
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/irish-rugby-institute-port-header.jpg');">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/irish-rugby-institute-port-header.jpg">
               <div class="port-modal-title-box">
                 <h1 class="port-title">Irish Rugby Institute</h1>
               </div>
@@ -487,7 +500,7 @@
               <div class="port-video-container">
                 <div class="port-video">
                   <!-- TODO: Change video -->
-                  <iframe src="https://vimeo.com/album/5303046/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                  <iframe class="b-lazy" data-src="https://vimeo.com/album/5303046/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
                 </div>
               </div>
 
@@ -520,13 +533,16 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
 
         <!-- Portfolio item 7: Be the Office hero -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\offbeat-btoh-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\offbeat-btoh-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Be the office hero</h3>
             <p class="port-desc">A comedic short for OffBeat Donuts</p>
@@ -539,7 +555,7 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/be-the-office-hero-port-header.jpg');">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/be-the-office-hero-port-header.jpg">
               <div class="port-modal-title-box">
                 <h1 class="port-title">OffBeat Donuts</h1>
               </div>
@@ -549,7 +565,7 @@
               <!-- Video player -->
               <div class="port-video-container">
                 <div class="port-video">
-                  <iframe src="https://player.vimeo.com/video/280727313" width="640" height="360" frameborder="0" allowfullscreen></iframe>                </div>
+                  <iframe class="b-lazy" data-src="https://player.vimeo.com/video/280727313" width="640" height="360" frameborder="0" allowfullscreen></iframe>                </div>
               </div>
 
               <!-- Paragraph 1: Project overview -->
@@ -581,13 +597,16 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
 
         <!-- Portfolio item 8: Be the Christmas hero -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\offbeat-btxh-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\offbeat-btxh-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Be the Christmas hero</h3>
             <p class="port-desc">A comedic short for OffBeat Donuts</p>
@@ -600,7 +619,7 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/be-the-christmas-hero-port-header.jpg');">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/be-the-christmas-hero-port-header.jpg">
               <div class="port-modal-title-box">
                 <h1 class="port-title">OffBeat Donuts</h1>
               </div>
@@ -642,6 +661,9 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
@@ -650,7 +672,7 @@
 
         <!-- Portfolio item 10: RTÉ: Directors in dialogue -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\directors-in-dialogue-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\directors-in-dialogue-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Directors in dialogue</h3>
             <p class="port-desc">A collection of interviews with directors done for RTÉ Culture</p>
@@ -663,7 +685,7 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/directors-in-dialogue-port-header.jpg'); background-position: top right;">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/directors-in-dialogue-port-header.jpg">
               <div class="port-modal-title-box">
                 <h1 class="port-title">Directors in dialogue</h1>
               </div>
@@ -673,7 +695,7 @@
               <!-- Video player -->
               <div class="port-video-container">
                 <div class="port-video">
-                  <iframe src="https://player.vimeo.com/video/285870167?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                  <iframe class="b-lazy" data-src="https://player.vimeo.com/video/285870167?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
                 </div>
               </div>
 
@@ -706,13 +728,16 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
 
         <!-- Portfolio item 11: Paintball video -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\skirmish-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\skirmish-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Capture the flag</h3>
             <p class="port-desc">Tongue in cheek short.</p>
@@ -725,7 +750,7 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/apocapaint-now-port-header.jpg');">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/apocapaint-now-port-header.jpg">
               <div class="port-modal-title-box">
                 <h1 class="port-title">Capture the flag</h1>
               </div>
@@ -735,7 +760,7 @@
               <!-- Video player -->
               <div class="port-video-container">
                 <div class="port-video">
-                  <iframe src="https://player.vimeo.com/video/280733451" width="640" height="360" frameborder="0" allowfullscreen></iframe>                </div>
+                  <iframe class="b-lazy" data-src="https://player.vimeo.com/video/280733451" width="640" height="360" frameborder="0" allowfullscreen></iframe>                </div>
               </div>
 
               <!-- Paragraph 1: Project overview -->
@@ -767,13 +792,16 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
 
         <!-- Portfolio item 12: BordBia: Gardening -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\bordbia-gardening-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\bordbia-gardening-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">BordBia: Gardening</h3>
             <p class="port-desc">A video summarising the key findings of recent research.</p>
@@ -786,7 +814,7 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/bordbia-gardening-port-header.jpg');">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/bordbia-gardening-port-header.jpg">
               <div class="port-modal-title-box">
                 <h1 class="port-title">BordBia</h1>
               </div>
@@ -796,7 +824,7 @@
               <!-- Video player -->
               <div class="port-video-container">
                 <div class="port-video">
-                  <iframe src="https://player.vimeo.com/video/280735529" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                  <iframe class="b-lazy" data-src="https://player.vimeo.com/video/280735529" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                 </div>
               </div>
 
@@ -829,13 +857,16 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
 
         <!-- Portfolio item 13: Provident CRM -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\provident-crm-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\provident-crm-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Provident CRM</h3>
             <p class="port-desc">CRM Ireland Event Coverage</p>
@@ -848,7 +879,7 @@
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/provident-crm-port-header.jpg'); background-position: top;">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/provident-crm-port-header.jpg">
               <div class="port-modal-title-box">
                 <h1 class="port-title">Provident CRM</h1>
               </div>
@@ -858,7 +889,7 @@
               <!-- Video player -->
               <div class="port-video-container">
                 <div class="port-video">
-                  <iframe src="https://vimeo.com/album/5367179/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                  <iframe class="b-lazy" data-src="https://vimeo.com/album/5367179/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
                 </div>
               </div>
 
@@ -891,6 +922,9 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
@@ -899,20 +933,20 @@
 
         <!-- Portfolio item 15: Penguin: Jeff Kinney Tour -->
         <figure class="port-item">
-          <img src="img\portfolio-thumbnails\penguin-thumb-01.jpg" alt="Portfolio item">
+          <img class="b-lazy" data-src="img\portfolio-thumbnails\penguin-thumb-01.jpg" alt="Portfolio item">
           <figcaption>
             <h3 class="port-item-title">Penguin Publishing</h3>
             <p class="port-desc">Jeff Kinney: World Tour</p>
             <a href="#" class="port-link">More info</a>
           </figcaption>
 
-          <!-- Portfolio modal 14 -->
+          <!-- Portfolio modal 15 -->
           <div class="port-modal">
             <button class="port-modal-close">
               <img class="port-close-icon" src="img/menu-icons/nav-close-icon.svg" alt="Close icon" onerror="this.src='img/menu-icons/nav-close-icon.png'">
             </button>
 
-            <div class="port-modal-header" style="background-image: url('img/portfolio-headers/penguin-port-header.png');">
+            <div class="port-modal-header b-lazy" data-src="img/portfolio-headers/penguin-port-header.png">
               <div class="port-modal-title-box">
                 <h1 class="port-title">Penguin Publishing</h1>
               </div>
@@ -923,7 +957,7 @@
               <!-- <div class="port-video-container">
                 <div class="port-video"> -->
                   <!-- TODO: Change video -->
-                  <!-- <iframe src="https://vimeo.com/album/5238576/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
+                  <!-- <iframe class="b-lazy" data-src="https://vimeo.com/album/5238576/embed?color=ff6928&title=0&byline=0&portrait=0" width="1920" height="1080" allowfullscreen frameborder="0"></iframe>
                 </div>
               </div> -->
 
@@ -957,6 +991,9 @@
               <!-- <img class="port-full-width" src="img/Portfolio-item (7).jpeg" alt="Behind the scenes"> -->
 
             </div>
+            <button class="port-modal-close-link">
+              <h2>Return to portfolio</h2>
+            </button>
           </div>
           <!-- /modal -->
         </figure>
@@ -972,26 +1009,24 @@
       <h2 class="trustedby-subtitle">Some of Irelands top brands</h2>
 
       <div class="trustedby-logos">
-        <img class="trustedby-logo" src="img/client-logos/RTÉ-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/Camile-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/allianz-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/REDC-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/a1-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/audilab-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/bodymed-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/OffBeat-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/bordbia-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/eddie-rockets-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/IRI-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/penguin-logopng.jpg">
-        <img class="trustedby-logo" src="img/client-logos/provident-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/romayos-logo.jpg">
-        <img class="trustedby-logo" src="img/client-logos/sdgi-logo.jpg">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/RTÉ-logo.jpg"           alt="RTÉ logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/Camile-logo.jpg"        alt="Camile logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/allianz-logo.jpg"       alt="Allianz logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/REDC-logo.jpg"          alt="REDC logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/a1-logo.jpg"            alt="A1 logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/audilab-logo.jpg"       alt="AudiLab logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/bodymed-logo.jpg"       alt="BodyMed logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/OffBeat-logo.jpg"       alt="OffBeat logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/bordbia-logo.jpg"       alt="BordBia logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/eddie-rockets-logo.jpg" alt="Eddie Rockets logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/IRI-logo.jpg"           alt="IRI logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/penguin-logopng.jpg"    alt="Penguin publishing logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/provident-logo.jpg"     alt="Provident logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/romayos-logo.jpg"       alt="Romayos logo">
+        <img class="trustedby-logo b-lazy" data-src="img/client-logos/sdgi-logo.jpg"          alt="SDGI logo">
       </div>
 
     </section>
-
-
 
 
     <!-- Contact us section -->
@@ -1046,7 +1081,17 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- blazy.js imports & setup -->
+    <script src="js/blazy.js"></script>
+    <script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy({
+              // configure blazy.js options here
+            });
+        })();
+    </script>
 
     <!-- Custom script imports -->
     <script src="js/nav.js"></script>
@@ -1054,6 +1099,7 @@
     <script src="js/portfolio-modal.js"></script>
     <script src="js/scroll-animations.js"></script>
 
+    <!-- PHP imports -->
     <?php include('php/form-to-email.php'); ?>
 
 

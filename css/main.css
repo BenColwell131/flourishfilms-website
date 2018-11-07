@@ -292,13 +292,18 @@ template {
     -webkit-transition: all 0.6s ease-out;
     transition: all 0.6s ease-out; }
 
+html {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
 body {
   background: #FFFFFF;
   color: #4B545D;
   font-family: "PT Sans", sans-serif;
   line-height: 1.3;
   font-size: 1rem;
-  font-weight: 400; }
+  font-weight: 400;
+  touch-action: auto; }
   @media (min-width: 50em) {
     body {
       font-size: 1.125rem; } }
@@ -356,12 +361,19 @@ textarea:focus,
 button:focus {
   outline: none; }
 
+.b-lazy {
+  opacity: 0;
+  transition: opacity 500ms; }
+
+.b-loaded {
+  opacity: 1; }
+
 .nav-open-button {
   cursor: pointer;
   position: fixed;
   top: 1vw;
   left: 1vw;
-  z-index: 99;
+  z-index: 80;
   background: transparent;
   border: 0;
   padding: .5em; }
@@ -786,10 +798,15 @@ nav ul {
       .featured .port-desc {
         font-size: 1.5rem; } } }
 
+body.modal-open {
+  overflow: hidden;
+  touch-action: none;
+  -webkit-overflow-scrolling: touch; }
+
 .port-modal {
   position: fixed;
   background: #FFFFFF;
-  z-index: 99;
+  z-index: 90;
   top: 2em;
   bottom: 2em;
   left: 2em;
@@ -821,6 +838,14 @@ nav ul {
   position: fixed;
   left: 1em;
   top: 1em; }
+
+.port-modal-close-link {
+  background: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+  padding: 1em; }
+  .port-modal-close-link h2 {
+    color: #FF6928; }
 
 .port-modal-header {
   text-align: left;
