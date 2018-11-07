@@ -348,6 +348,16 @@ h3 {
   text-transform: uppercase;
   line-height: 1.2; }
 
+button {
+  border: none;
+  border-radius: 10px;
+  background: #FF6928;
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 1.25em; }
+
 figure {
   margin: 0;
   padding: 0; }
@@ -1133,6 +1143,27 @@ footer {
     background: rgba(255, 105, 40, 0.6);
     width: 20%;
     margin: 0 auto 4em; }
+
+.confirmation-body {
+  padding: 4.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .confirmation-body p {
+    margin-bottom: 2em; }
+
+.confirmation-message {
+  margin-bottom: 2em; }
+
+.confirmation-sub-body {
+  width: 100%;
+  background: #242E3A;
+  align-items: center;
+  padding: 4.5em 2em; }
+  .confirmation-sub-body .phone-container {
+    justify-content: center; }
 
 .bounce-up {
   opacity: 0;

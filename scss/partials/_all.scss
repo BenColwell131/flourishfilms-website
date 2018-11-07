@@ -1,5 +1,7 @@
 @import 'preloader';
 @import 'base';
+
+//Homepage
 @import 'nav';
 @import 'welcome';
 @import 'testimonials';
@@ -8,5 +10,8 @@
 @import 'trustedby';
 @import 'contactus';
 @import 'footer';
+
+//Form submission page
+@import 'formconfirmation';
 
 @import 'animations';

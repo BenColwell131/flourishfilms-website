@@ -1,0 +1,27 @@
+.confirmation-body{
+  padding: 4.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  p{
+    margin-bottom: 2em;
+  }
+}
+
+.confirmation-message{
+  margin-bottom: 2em;
+}
+
+.confirmation-sub-body{
+  width: 100%;
+  background: $dark-blue;
+  align-items: center;
+  padding: 4.5em 2em;
+
+  .phone-container{
+    justify-content: center;
+  }
+}

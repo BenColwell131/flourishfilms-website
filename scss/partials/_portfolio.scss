@@ -169,8 +169,6 @@
 // Start of modal CSS
 
 body.modal-open{
-    //Kinda works but sets home page to top again.
-    // position: fixed;
     overflow: hidden;
     touch-action: none;
     -webkit-overflow-scrolling: touch;
