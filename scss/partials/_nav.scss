@@ -50,13 +50,22 @@ nav{
   box-shadow: 5px 5px 20px rgba($grey, .5);
 
   // Turn off menu in extremely short viewports
-  @media (max-height: 35em){
+  @media (max-height: 30em){
     display: none;
   }
 
   //Nav action
-  transform: translateX(-110%);
-  transition: transform ease-out 250ms;
+  -webkit-transform: translateX(-110%);
+     -moz-transform: translateX(-110%);
+      -ms-transform: translateX(-110%);
+       -o-transform: translateX(-110%);
+          transform: translateX(-110%);
+
+  -webkit-transition: transform ease-out 250ms;
+     -moz-transition: transform ease-out 250ms;
+      -ms-transition: transform ease-out 250ms;
+       -o-transition: transform ease-out 250ms;
+          transition: transform ease-out 250ms;
 }
 
 .nav-img-container{
@@ -112,7 +121,12 @@ nav ul {
 //Nav action
 .nav-is-open{
   nav{
-    transform: translateX(0);
+
+    -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+         -o-transform: translateX(0);
+            transform: translateX(0);
   }
 
   .nav-open-button{

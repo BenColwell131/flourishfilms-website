@@ -420,9 +420,17 @@ nav {
   border-radius: 0 2em 2em 0;
   background-color: #242E3A;
   box-shadow: 5px 5px 20px rgba(75, 84, 93, 0.5);
+  -webkit-transform: translateX(-110%);
+  -moz-transform: translateX(-110%);
+  -ms-transform: translateX(-110%);
+  -o-transform: translateX(-110%);
   transform: translateX(-110%);
+  -webkit-transition: transform ease-out 250ms;
+  -moz-transition: transform ease-out 250ms;
+  -ms-transition: transform ease-out 250ms;
+  -o-transition: transform ease-out 250ms;
   transition: transform ease-out 250ms; }
-  @media (max-height: 35em) {
+  @media (max-height: 30em) {
     nav {
       display: none; } }
 
@@ -466,6 +474,10 @@ nav ul {
   margin-right: 1em; }
 
 .nav-is-open nav {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
   transform: translateX(0); }
 
 .nav-is-open .nav-open-button {
