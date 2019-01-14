@@ -182,7 +182,7 @@ body.modal-open{
   bottom: 2em;
   left: 2em;
   right: 2em;
-  box-shadow: 0 0 0 5em rgba(black, .7);
+  box-shadow: 0 0 0 5em rgba(black, .8);
   overflow-y: scroll;
   overflow-x: hidden;
 
@@ -203,6 +203,13 @@ body.modal-open{
 }
 
 .port-modal-close{
+
+  display: none;
+  @include mq{
+    display: block;
+  }
+
+
   background: $dark-blue;
   border: 0;
   width: 2em;
@@ -210,18 +217,29 @@ body.modal-open{
   border-radius: 3em;
   box-shadow: 0 0 10px rgba(white, .3);
   cursor: pointer;
-  z-index: 99;
+  z-index: 98;
 
   position: fixed;
-  left: 1em;
-  top: 1em;
+  left: 1.25em;
+  top: 1.25em;
+
+  .port-close-icon{
+    position: fixed;
+    display: block;
+    margin: auto;
+    width: 2.5em;
+    height: 2.5em;
+    left: 1.25em;
+    top: 1.25em;
+    z-index: 99;
+  }
 }
 
 .port-modal-close-link{
   background: $white;
   border: 0;
   cursor: pointer;
-  padding: 1em;
+  padding: 2.5em;
 
   h2{
     color: $accent;

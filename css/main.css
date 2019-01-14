@@ -833,7 +833,7 @@ body.modal-open {
   bottom: 2em;
   left: 2em;
   right: 2em;
-  box-shadow: 0 0 0 5em rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0 5em rgba(0, 0, 0, 0.8);
   overflow-y: scroll;
   overflow-x: hidden;
   display: none; }
@@ -849,6 +849,7 @@ body.modal-open {
       bottom: 1em; } }
 
 .port-modal-close {
+  display: none;
   background: #242E3A;
   border: 0;
   width: 2em;
@@ -856,16 +857,28 @@ body.modal-open {
   border-radius: 3em;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   cursor: pointer;
-  z-index: 99;
+  z-index: 98;
   position: fixed;
-  left: 1em;
-  top: 1em; }
+  left: 1.25em;
+  top: 1.25em; }
+  @media (min-width: 50em) {
+    .port-modal-close {
+      display: block; } }
+  .port-modal-close .port-close-icon {
+    position: fixed;
+    display: block;
+    margin: auto;
+    width: 2.5em;
+    height: 2.5em;
+    left: 1.25em;
+    top: 1.25em;
+    z-index: 99; }
 
 .port-modal-close-link {
   background: #FFFFFF;
   border: 0;
   cursor: pointer;
-  padding: 1em; }
+  padding: 2.5em; }
   .port-modal-close-link h2 {
     color: #FF6928; }
 
