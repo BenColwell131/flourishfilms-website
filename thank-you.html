@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Email confirmation</title>
-  </head>
-  <body>
-    <p>Message received. Thank you for sending an email.</p>
-    <p>This page is under construction.</p>
-  </body>
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+  <!-- Custom CSS import -->
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+
+  <title>Email confirmation</title>
+</head>
+
+<!-- === BODY START === -->
+<body class="confirmation-body">
+  <div class="confirmation-header">
+      <h1>Thank you!</h1>
+  </div>
+  <div class="confirmation-message">
+    <h2>Message received. We'll be in touch as soon as possible!</h2>
+    <p>In the meantime, why not check out some of our work?</p>
+    <form action="index.html#portfolio">
+      <button class="button" type="submit">Let's go!</button>
+    </form>
+  </div>
+  <div class="confirmation-sub-body">
+    <h2 class="contactUs-subtitle">Can't wait to get started? </br>Give us a call!</h2>
+    <div class="phone-container">
+      <img class="contactUs-icons" src="img/contact-us-icons/call.svg" onerror="this.src='img/call.png'" alt="call">
+      <h2 class="contactUs-phone">086 7377087</h2>
+    </div>
+  </div>
+
+
+
+
+  <!-- Footer section -->
+  <footer>
+    <h2 class="footer-title">Follow us on social</h2>
+    <div class="footer-social-icons">
+      <a href="https://www.facebook.com/flourishfilmsireland/" target="_blank">
+        <img class="footer-social-icon" src="img/social-icons/facebook_icon-v2.png" alt="Facebook logo">
+      </a>
+      <a href="https://www.linkedin.com/company/flourish-films/" target="_blank">
+        <img class="footer-social-icon" src="img/social-icons/linkedin_icon-v2.png" alt="Linkedin logo">
+      </a>
+      <a href="https://twitter.com/" target="_blank">
+        <img class="footer-social-icon" src="img/social-icons/twitter_icon-v2.png" alt="Twitter logo">
+      </a>
+      <a href="https://vimeo.com/flourishfilmsireland" target="_blank">
+        <img class="footer-social-icon" src="img/social-icons/vimeo_icon-v2.png" alt="Vimeo logo">
+      </a>
+    </div>
+    <p class="footer-copyright">Copyright 2018 Flourish</p>
+  </footer>
+</body>
 </html>
