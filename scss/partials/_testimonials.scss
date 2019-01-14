@@ -114,7 +114,6 @@
   }
 
   .carousel-item{
-    // height: 80vh;
     height: 100%;
 
     .testimonial{
@@ -129,18 +128,6 @@
       align-items: center;
       justify-content: center;
     }
-
-    // @include mq($width: 35em){
-    //   height: 50vh;
-    // }
-    //
-    // @media (max-width: 20em){
-    //   height: 100vh;
-    // }
-    //
-    // @media (max-height: 40em){
-    //   height: 100vh;
-    // }
   }
 
   .carousel-indicators{

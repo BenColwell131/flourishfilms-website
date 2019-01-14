@@ -727,7 +727,7 @@ nav ul {
   max-width: 50em; }
 
 .parallax-image-01 {
-  height: 40vh;
+  height: 40%;
   width: 100%;
   background-image: url("../img/parallax-img-01.jpg");
   background-size: cover;
@@ -1008,51 +1008,27 @@ body.modal-open {
 
 .port-testimonial-container {
   background-color: #242E3A;
-  padding: 3em 2em 7em 2em;
+  padding: 3em 2em 3em 2em;
   width: 100vw;
-  margin: 2em calc(50% - 50vw) 2em;
-  position: relative;
-  height: 90vh; }
-  @media (min-width: 35em) {
-    .port-testimonial-container {
-      height: 60vh; } }
-  @media (max-width: 20em) {
-    .port-testimonial-container {
-      height: 100vh; } }
-  @media (max-height: 40em) {
-    .port-testimonial-container {
-      height: 100vh; } }
+  margin: 2em calc(50% - 50vw) 2em; }
 
 .port-testimonial {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 80%;
-  max-width: 50em;
-  padding: 3em 0 1em 0; }
+  max-width: 50em; }
   .port-testimonial h2 {
     text-align: left; }
   .port-testimonial .author-details {
-    margin-left: 7.5em; }
+    margin-left: 40%; }
     @media (min-width: 50em) {
       .port-testimonial .author-details {
-        margin-left: 20em; } }
-    @media (max-height: 40em) {
-      .port-testimonial .author-details {
-        margin-left: 5em; } }
+        margin-left: 60%; } }
 
 .port-modal .port-full-width {
   max-width: initial;
   width: 100vw;
   margin: 2em calc(50% - 50vw);
-  height: 25vh;
+  height: 25%;
   object-fit: cover; }
 
 .port-modal .port-img-2 {

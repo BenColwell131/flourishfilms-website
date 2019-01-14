@@ -302,7 +302,7 @@ body.modal-open{
   @include container($width: 85%);
   text-align: left;
   padding-bottom: 2em;
-
+  // height: auto;
   h2{
     text-align: center;
   }
@@ -348,54 +348,24 @@ body.modal-open{
 
 .port-testimonial-container{
     background-color: $dark-blue;
-    padding: 3em 2em 7em 2em;
+    padding: 3em 2em 3em 2em;
     width: 100vw;
     margin: 2em calc(50% - 50vw) 2em;
-
-    position: relative;
-    height: 90vh;
-
-    @include mq($width: 35em){
-      height: 60vh;
-    }
-
-    @media (max-width: 20em){
-      height: 100vh;
-    }
-
-    @media (max-height: 40em){
-      height: 100vh;
-    }
 }
 
 .port-testimonial{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 80%;
     max-width: 50em;
-    padding: 3em 0 1em 0;
 
     h2{
       text-align: left;
     }
 
     .author-details{
-      margin-left: 7.5em;
-
-      @include mq {
-        margin-left: 20em;
-      }
-
-      @media (max-height: 40em){
-        margin-left: 5em;
+      margin-left: 40%;
+      @include mq(){
+        margin-left: 60%;
       }
     }
 }
@@ -404,7 +374,7 @@ body.modal-open{
   max-width: initial;
   width: 100vw;
   margin: 2em calc(50% - 50vw);
-  height: 25vh;
+  height: 25%;
   object-fit: cover;
 }
 
