@@ -1,6 +1,11 @@
 .testimonials {
   background: $dark-blue;
   padding: 4.5em 2em;
+
+  height: 105%;
+  @include mq($width: 35em){
+    height: 75%;
+  }
 }
 
 .testimonial-quote {
@@ -33,6 +38,14 @@
   @include mq {
     font-size: 1.25rem;
   }
+
+  //Tiny screens:
+  @media (max-width: 20em){
+    font-size: .9rem;
+  }
+  @media (max-height: 40em){
+    font-size: .9rem;
+  }
 }
 
 .author-details {
@@ -59,6 +72,13 @@
   @include mq {
     font-size: 1.5rem;
   }
+  //Tiny screens:
+  @media (max-width: 20em){
+    font-size: 1rem;
+  }
+  @media (max-height: 40em){
+    font-size: 1rem;
+  }
 }
 
 .testimonial-subtitle{
@@ -70,17 +90,32 @@
   @include mq {
     font-size: 1.125rem;
   }
+  //Tiny screens:
+  @media (max-width: 20em){
+    font-size: .7rem;
+  }
+  @media (max-height: 40em){
+    font-size: .7rem;
+  }
 }
 
 .testimonial-carousel-container{
+  height: 100%;
+
+  .carousel{
+    height: 100%;
+  }
+
   .carousel-inner{
     width: 95%;
     max-width: 50em;
     margin: 0 auto;
+    height: 100%;
   }
 
   .carousel-item{
-    height: 80vh;
+    // height: 80vh;
+    height: 100%;
 
     .testimonial{
       position: absolute;
@@ -95,22 +130,22 @@
       justify-content: center;
     }
 
-    @include mq($width: 35em){
-      height: 50vh;
-    }
-
-    @media (max-width: 20em){
-      height: 100vh;
-    }
-
-    @media (max-height: 40em){
-      height: 100vh;
-    }
+    // @include mq($width: 35em){
+    //   height: 50vh;
+    // }
+    //
+    // @media (max-width: 20em){
+    //   height: 100vh;
+    // }
+    //
+    // @media (max-height: 40em){
+    //   height: 100vh;
+    // }
   }
 
   .carousel-indicators{
     position: relative;
-    margin: 1em auto 0;
+    margin: 0 auto 0;
 
     li {
       height: .75em;

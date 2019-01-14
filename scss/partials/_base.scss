@@ -1,6 +1,7 @@
 html{
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  height: 100%;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   font-size: 1rem;
   font-weight: $fw-n;
   touch-action: auto;
+  height: 100%;
 
   @include mq {
     font-size: 1.125rem;
@@ -38,6 +40,15 @@ h1 {
   @include mq {
     font-size: 4.375rem;
   }
+  //Tiny screens:
+  @media (max-width: 20em){
+    font-size: 2.5rem;
+    line-height: 0.8;
+  }
+  @media (max-height: 40em){
+    font-size: 2.5rem;
+    line-height: 0.8;
+  }
 }
 
 h2 {
@@ -51,6 +62,13 @@ h2 {
 
   @include mq {
     font-size: 1.5rem;
+  }
+  //Tiny screens:
+  @media (max-width: 20em){
+    font-size: 1.1rem;
+  }
+  @media (max-height: 40em){
+    font-size: 1.1rem;
   }
 }
 

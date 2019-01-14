@@ -294,7 +294,8 @@ template {
 
 html {
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  height: 100%; }
 
 body {
   background: #FFFFFF;
@@ -303,7 +304,8 @@ body {
   line-height: 1.3;
   font-size: 1rem;
   font-weight: 400;
-  touch-action: auto; }
+  touch-action: auto;
+  height: 100%; }
   @media (min-width: 50em) {
     body {
       font-size: 1.125rem; } }
@@ -326,6 +328,14 @@ h1 {
   @media (min-width: 50em) {
     h1 {
       font-size: 4.375rem; } }
+  @media (max-width: 20em) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 0.8; } }
+  @media (max-height: 40em) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 0.8; } }
 
 h2 {
   color: #242E3A;
@@ -338,6 +348,12 @@ h2 {
   @media (min-width: 50em) {
     h2 {
       font-size: 1.5rem; } }
+  @media (max-width: 20em) {
+    h2 {
+      font-size: 1.1rem; } }
+  @media (max-height: 40em) {
+    h2 {
+      font-size: 1.1rem; } }
 
 h3 {
   color: black;
@@ -408,7 +424,7 @@ button:focus {
   max-width: 3em; }
 
 nav {
-  height: 80vh;
+  height: 80%;
   width: 70vw;
   max-width: 20em;
   position: fixed;
@@ -435,14 +451,14 @@ nav {
       display: none; } }
 
 .nav-img-container {
-  height: 20vh;
+  height: 25%;
   border-radius: 0 2em 0 0;
   background-image: url("../img/nav-img.jpg");
   background-size: cover;
   background-position: top -100px; }
 
 nav ul {
-  height: 60vh;
+  height: 75%;
   width: 70%;
   margin: 0 auto;
   padding: 2em 0;
@@ -484,7 +500,7 @@ nav ul {
   opacity: .5; }
 
 .welcome {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -515,6 +531,12 @@ nav ul {
       .welcome h2 {
         font-size: 3.5rem;
         margin-left: 20px; } }
+    @media (max-width: 20em) {
+      .welcome h2 {
+        font-size: 1.6rem; } }
+    @media (max-height: 40em) {
+      .welcome h2 {
+        font-size: 1.6rem; } }
   .welcome h1 {
     font-size: 4rem;
     font-family: "PT Sans", sans-serif;
@@ -526,6 +548,12 @@ nav ul {
     @media (min-width: 90em) {
       .welcome h1 {
         font-size: 7rem; } }
+    @media (max-width: 20em) {
+      .welcome h1 {
+        font-size: 3.2rem; } }
+    @media (max-height: 40em) {
+      .welcome h1 {
+        font-size: 3.2rem; } }
   .welcome h3 {
     color: #4B545D;
     font-weight: 400;
@@ -546,11 +574,15 @@ nav ul {
 
 .welcome-arrow-icon {
   position: absolute;
-  bottom: 2vh; }
+  bottom: 2%; }
 
 .testimonials {
   background: #242E3A;
-  padding: 4.5em 2em; }
+  padding: 4.5em 2em;
+  height: 105%; }
+  @media (min-width: 35em) {
+    .testimonials {
+      height: 75%; } }
 
 .testimonial-quote {
   color: #FFFFFF;
@@ -577,6 +609,12 @@ nav ul {
   @media (min-width: 50em) {
     .testimonial-quote {
       font-size: 1.25rem; } }
+  @media (max-width: 20em) {
+    .testimonial-quote {
+      font-size: .9rem; } }
+  @media (max-height: 40em) {
+    .testimonial-quote {
+      font-size: .9rem; } }
 
 .author-details {
   margin-left: 10em;
@@ -597,6 +635,12 @@ nav ul {
   @media (min-width: 50em) {
     .testimonial-title {
       font-size: 1.5rem; } }
+  @media (max-width: 20em) {
+    .testimonial-title {
+      font-size: 1rem; } }
+  @media (max-height: 40em) {
+    .testimonial-title {
+      font-size: 1rem; } }
 
 .testimonial-subtitle {
   color: #FFFFFF;
@@ -606,45 +650,45 @@ nav ul {
   @media (min-width: 50em) {
     .testimonial-subtitle {
       font-size: 1.125rem; } }
-
-.testimonial-carousel-container .carousel-inner {
-  width: 95%;
-  max-width: 50em;
-  margin: 0 auto; }
-
-.testimonial-carousel-container .carousel-item {
-  height: 80vh; }
-  .testimonial-carousel-container .carousel-item .testimonial {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  @media (min-width: 35em) {
-    .testimonial-carousel-container .carousel-item {
-      height: 50vh; } }
   @media (max-width: 20em) {
-    .testimonial-carousel-container .carousel-item {
-      height: 100vh; } }
+    .testimonial-subtitle {
+      font-size: .7rem; } }
   @media (max-height: 40em) {
-    .testimonial-carousel-container .carousel-item {
-      height: 100vh; } }
+    .testimonial-subtitle {
+      font-size: .7rem; } }
 
-.testimonial-carousel-container .carousel-indicators {
-  position: relative;
-  margin: 1em auto 0; }
-  .testimonial-carousel-container .carousel-indicators li {
-    height: .75em;
-    width: .75em;
-    border-radius: 30%;
-    background-color: rgba(255, 105, 40, 0.2); }
-  .testimonial-carousel-container .carousel-indicators .active {
-    background-color: #ff6928; }
+.testimonial-carousel-container {
+  height: 100%; }
+  .testimonial-carousel-container .carousel {
+    height: 100%; }
+  .testimonial-carousel-container .carousel-inner {
+    width: 95%;
+    max-width: 50em;
+    margin: 0 auto;
+    height: 100%; }
+  .testimonial-carousel-container .carousel-item {
+    height: 100%; }
+    .testimonial-carousel-container .carousel-item .testimonial {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+  .testimonial-carousel-container .carousel-indicators {
+    position: relative;
+    margin: 0 auto 0; }
+    .testimonial-carousel-container .carousel-indicators li {
+      height: .75em;
+      width: .75em;
+      border-radius: 30%;
+      background-color: rgba(255, 105, 40, 0.2); }
+    .testimonial-carousel-container .carousel-indicators .active {
+      background-color: #ff6928; }
 
 .about {
   padding: 4.5em 2em;
@@ -739,6 +783,12 @@ nav ul {
   color: #FFFFFF;
   font-size: 1.25rem;
   margin-bottom: auto; }
+  @media (max-width: 20em) {
+    .port-item-title {
+      font-size: .9rem; } }
+  @media (max-height: 40em) {
+    .port-item-title {
+      font-size: .9rem; } }
   @media (min-width: 30em) {
     .port-item-title {
       font-size: 1.75rem; } }
@@ -767,6 +817,12 @@ nav ul {
   font-size: .9rem;
   position: relative;
   transition: opacity ease-in-out 250ms; }
+  @media (max-width: 20em) {
+    .port-link {
+      font-size: .7rem; } }
+  @media (max-height: 40em) {
+    .port-link {
+      font-size: .7rem; } }
   @media (min-width: 40em) {
     .port-link {
       font-size: 1.25rem; } }
