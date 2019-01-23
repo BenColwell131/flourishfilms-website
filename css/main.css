@@ -328,11 +328,7 @@ h1 {
   @media (min-width: 50em) {
     h1 {
       font-size: 4.375rem; } }
-  @media (max-width: 20em) {
-    h1 {
-      font-size: 2.5rem;
-      line-height: 0.8; } }
-  @media (max-height: 40em) {
+  @media (max-width: 17em) {
     h1 {
       font-size: 2.5rem;
       line-height: 0.8; } }
@@ -348,10 +344,7 @@ h2 {
   @media (min-width: 50em) {
     h2 {
       font-size: 1.5rem; } }
-  @media (max-width: 20em) {
-    h2 {
-      font-size: 1.1rem; } }
-  @media (max-height: 40em) {
+  @media (max-width: 17em) {
     h2 {
       font-size: 1.1rem; } }
 
@@ -531,10 +524,7 @@ nav ul {
       .welcome h2 {
         font-size: 3.5rem;
         margin-left: 20px; } }
-    @media (max-width: 20em) {
-      .welcome h2 {
-        font-size: 1.6rem; } }
-    @media (max-height: 40em) {
+    @media (max-width: 17em) {
       .welcome h2 {
         font-size: 1.6rem; } }
   .welcome h1 {
@@ -548,10 +538,7 @@ nav ul {
     @media (min-width: 90em) {
       .welcome h1 {
         font-size: 7rem; } }
-    @media (max-width: 20em) {
-      .welcome h1 {
-        font-size: 3.2rem; } }
-    @media (max-height: 40em) {
+    @media (max-width: 17em) {
       .welcome h1 {
         font-size: 3.2rem; } }
   .welcome h3 {
@@ -609,10 +596,7 @@ nav ul {
   @media (min-width: 50em) {
     .testimonial-quote {
       font-size: 1.25rem; } }
-  @media (max-width: 20em) {
-    .testimonial-quote {
-      font-size: .9rem; } }
-  @media (max-height: 40em) {
+  @media (max-width: 17em) {
     .testimonial-quote {
       font-size: .9rem; } }
 
@@ -635,10 +619,7 @@ nav ul {
   @media (min-width: 50em) {
     .testimonial-title {
       font-size: 1.5rem; } }
-  @media (max-width: 20em) {
-    .testimonial-title {
-      font-size: 1rem; } }
-  @media (max-height: 40em) {
+  @media (max-width: 17em) {
     .testimonial-title {
       font-size: 1rem; } }
 
@@ -650,10 +631,7 @@ nav ul {
   @media (min-width: 50em) {
     .testimonial-subtitle {
       font-size: 1.125rem; } }
-  @media (max-width: 20em) {
-    .testimonial-subtitle {
-      font-size: .7rem; } }
-  @media (max-height: 40em) {
+  @media (max-width: 17em) {
     .testimonial-subtitle {
       font-size: .7rem; } }
 
@@ -783,10 +761,7 @@ nav ul {
   color: #FFFFFF;
   font-size: 1.25rem;
   margin-bottom: auto; }
-  @media (max-width: 20em) {
-    .port-item-title {
-      font-size: .9rem; } }
-  @media (max-height: 40em) {
+  @media (max-width: 17em) {
     .port-item-title {
       font-size: .9rem; } }
   @media (min-width: 30em) {
@@ -817,10 +792,7 @@ nav ul {
   font-size: .9rem;
   position: relative;
   transition: opacity ease-in-out 250ms; }
-  @media (max-width: 20em) {
-    .port-link {
-      font-size: .7rem; } }
-  @media (max-height: 40em) {
+  @media (max-width: 17em) {
     .port-link {
       font-size: .7rem; } }
   @media (min-width: 40em) {

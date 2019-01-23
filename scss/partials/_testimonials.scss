@@ -40,10 +40,7 @@
   }
 
   //Tiny screens:
-  @media (max-width: 20em){
-    font-size: .9rem;
-  }
-  @media (max-height: 40em){
+  @media (max-width: 17em){
     font-size: .9rem;
   }
 }
@@ -73,10 +70,7 @@
     font-size: 1.5rem;
   }
   //Tiny screens:
-  @media (max-width: 20em){
-    font-size: 1rem;
-  }
-  @media (max-height: 40em){
+  @media (max-width: 17em){
     font-size: 1rem;
   }
 }
@@ -91,10 +85,7 @@
     font-size: 1.125rem;
   }
   //Tiny screens:
-  @media (max-width: 20em){
-    font-size: .7rem;
-  }
-  @media (max-height: 40em){
+  @media (max-width: 17em){
     font-size: .7rem;
   }
 }

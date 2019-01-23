@@ -41,11 +41,7 @@ h1 {
     font-size: 4.375rem;
   }
   //Tiny screens:
-  @media (max-width: 20em){
-    font-size: 2.5rem;
-    line-height: 0.8;
-  }
-  @media (max-height: 40em){
+  @media (max-width: 17em){
     font-size: 2.5rem;
     line-height: 0.8;
   }
@@ -64,10 +60,7 @@ h2 {
     font-size: 1.5rem;
   }
   //Tiny screens:
-  @media (max-width: 20em){
-    font-size: 1.1rem;
-  }
-  @media (max-height: 40em){
+  @media (max-width: 17em){
     font-size: 1.1rem;
   }
 }
